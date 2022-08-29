@@ -1,0 +1,9 @@
+@use "../../global" as *;
+
+.c-overflow {
+    &--frontPage {
+        &__menu {
+            overflow: hidden;
+        }
+    }
+}

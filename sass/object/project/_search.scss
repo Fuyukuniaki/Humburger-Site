@@ -12,11 +12,11 @@
         border: 1px solid $textColor_Gray;
         border-radius: 10px;
         width: 21vw;
-        height: 2.4vw;
-        line-height: 2.4vw;
+        height: $searchHeight_PC;
+        line-height: $searchHeight_PC;
         margin: auto 0.7vw auto auto;
         padding: 0 0 0 0.6vw;
-        text-indent: 2.4vw;
+        text-indent: $searchHeight_PC;
         &__lupe {
             content: "";
             display: inline-block;
@@ -32,15 +32,17 @@
             height: 1.25vw;
         }
     }
-    &--Botton {
+    &--Button {
         display: inline-block;
         border: 1px solid $textColor_Gray;
         border-radius: 10px;
         background: linear-gradient($linearGradientS, $linearGradientE);
         width: 7vw;
-        height: 2.4vw;
+        height: $searchHeight_PC;
         &__text {
             display: inline-block;
+            height: $searchHeight_PC;
+            line-height: $searchHeight_PC;
         }
     }
 }
