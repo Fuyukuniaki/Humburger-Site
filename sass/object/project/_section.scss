@@ -1,9 +1,14 @@
 @use "../../global" as *;
+@use "../../foundation/" as *;
+
 .p-section {
     &--PageTitle {
         display: block;
-        width: $headerWidth_PC;
         height: 27.6vw;
+        @include media(PC){
+            width: $headerWidth_PC;
+        }
+        width:100vw;
     }
     &--MainCard {
         width: 69.375vw;

@@ -1,0 +1,7 @@
+@use "../global/" as *;
+
+@mixin media($breakpoint) {
+    @media #{map-get($breakpoints,$breakpoint)} {
+        @content;
+    }
+}

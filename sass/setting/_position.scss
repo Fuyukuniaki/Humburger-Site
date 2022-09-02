@@ -1,0 +1,28 @@
+@use "../global" as *;
+@use "../foundation/" as *;
+@include media (iPad) {
+    .s-position {
+        &--Frontpage {
+            &--Body {
+                position: relative;
+            }
+            &--MainContent {
+                position: static;
+                &.inactive {
+                    position: fixed;
+                }
+            }
+            &--NavMenu {
+                position: static;
+                top: 0;
+                left:100%;
+                &.active {
+                    position: absolute;
+                    top: 0;
+                    left:auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

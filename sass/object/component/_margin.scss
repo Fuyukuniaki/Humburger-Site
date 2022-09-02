@@ -1,4 +1,6 @@
 @use "../../global" as *;
+
+
 .c-margin {
     &--AllZero {
         margin: 0;
@@ -42,7 +44,7 @@
     &--NavMenu {
         margin: 0 auto 2.39vw 2.4vw;
     }
-    &--NavSubMenu {
+    &--NavMenuSub {
         margin: 0 auto 3.1vw 0;
         &__title {
             margin: 0 auto 2.083vw 0;

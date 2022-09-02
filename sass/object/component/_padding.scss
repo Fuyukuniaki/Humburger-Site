@@ -1,4 +1,6 @@
 @use "../../global" as *;
+@use "../../foundation/" as *;
+
 .c-padding {
     &--AllZero {
         padding: 0;

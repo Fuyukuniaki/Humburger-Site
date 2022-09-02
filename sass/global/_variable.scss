@@ -15,7 +15,7 @@ $linearGradientS  : #F2EDE9;
 $linearGradientE  : #DED8D3;
 
 $bgColor_Header   : #FFF7EF;
-$bgColor_SideNav  : #F2EDE9;
+$bgColor_NavMenu  : #F2EDE9;
 $bgColor_CardBase : #FFFDFA;
 $bgColor_CardText : #FFFFFFCC;
 $bgColor_MapText  : #0000004a;
@@ -30,3 +30,9 @@ $headerWidth_PC   : 100vw - $navMenuWidth_PC ;
 $headerHeight_PC  : 11.3vw;
 $searchHeight_PC  : 2.4vw;
 $footerHeight_PC  : 7.8125vw;
+
+$breakpoints      : (
+            PC    :  "only screen and (min-width:835px)",
+            iPad  :  "only screen and (max-width:834px)",
+            iPhone:  "only screen and (max-width:375px)",
+);

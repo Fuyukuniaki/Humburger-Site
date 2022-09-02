@@ -1,4 +1,5 @@
 @use "../global" as *;
+@use "../foundation/" as *;
 
 .l-main {
     display: flex;
@@ -6,4 +7,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-flow: column wrap;
+    @include media(iPad){
+        width: 100vw;
+    }
 }

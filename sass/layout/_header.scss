@@ -1,4 +1,5 @@
 @use "../global" as *;
+@use "../foundation/" as *;
 
 .l-header {
     display: flex;
@@ -6,4 +7,7 @@
     height: $headerHeight_PC;
     justify-content: space-between;
     align-items: center;
+    @include media(iPad){
+        width: 100vw;
+    }
 }

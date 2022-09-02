@@ -15,12 +15,30 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   text-decoration: none;
 }
 
+@media only screen and (max-width:834px) {
+  .s-position--Frontpage--Body {
+    position: relative;
+  }
+  .s-position--Frontpage--MainContent {
+    position: fixed;
+  }
+  .s-position--Frontpage--NavMenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+}
 .l-header {
   display: flex;
   width: 81vw;
   height: 11.3vw;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width:834px) {
+  .l-header {
+    width: 100vw;
+  }
 }
 
 .l-nav {
@@ -38,6 +56,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   align-items: flex-start;
   flex-flow: column wrap;
 }
+@media only screen and (max-width:834px) {
+  .l-main {
+    width: 100vw;
+  }
+}
 
 .l-footer {
   display: block;
@@ -49,7 +72,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-background--Header {
   background-color: #FFF7EF;
 }
-.c-background--SideNav {
+.c-background--NavMenu {
   background-color: #F2EDE9;
 }
 .c-background--MainTitle {
@@ -93,30 +116,31 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   color: #3C2A10;
 }
 
-.c-grid--FrontPage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+@media only screen and (min-width:835px) {
+  .c-grid--FrontPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-header {
+    grid-area: 1/1/2/2;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-main {
+    grid-area: 2/1/3/2;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-nav {
+    grid-area: 1/2/3/3;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-footer {
+    grid-area: 3/1/4/3;
+    align-self: start;
+  }
 }
-.c-grid--FrontPage > .l-header {
-  grid-area: 1/1/2/2;
-  align-self: start;
-}
-.c-grid--FrontPage > .l-nav {
-  grid-area: 1/2/3/3;
-  align-self: start;
-}
-.c-grid--FrontPage > .l-main {
-  grid-area: 2/1/3/2;
-  align-self: start;
-}
-.c-grid--FrontPage > .l-footer {
-  grid-area: 3/1/4/3;
-  align-self: start;
-}
-
 .c-margin--AllZero {
   margin: 0;
 }
@@ -159,13 +183,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-margin--NavMenu {
   margin: 0 auto 2.39vw 2.4vw;
 }
-.c-margin--NavSubMenu {
+.c-margin--NavMenuSub {
   margin: 0 auto 3.1vw 0;
 }
-.c-margin--NavSubMenu__title {
+.c-margin--NavMenuSub__title {
   margin: 0 auto 2.083vw 0;
 }
-.c-margin--NavSubMenu__text {
+.c-margin--NavMenuSub__text {
   margin: 0 auto 1.6vw 0;
 }
 .c-margin--Footer__link {
@@ -327,7 +351,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   text-decoration: none;
 }
 
-.c-overflow--frontPage__menu {
+.c-overflow--frontPage__NavMenu {
   overflow: hidden;
 }
 
@@ -369,7 +393,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   width: 1.25vw;
   height: 1.25vw;
 }
-.p-search--Botton {
+.p-search--Button {
   display: inline-block;
   border: 1px solid #707070;
   border-radius: 10px;
@@ -377,12 +401,25 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   width: 7vw;
   height: 2.4vw;
 }
-.p-search--Botton__text {
+.p-search--Button__text {
   display: inline-block;
   height: 2.4vw;
   line-height: 2.4vw;
 }
 
+@media only screen and (max-width:834px) {
+  .p-nav--NavMenu {
+    width: 19vw;
+    height: 100%;
+  }
+  .p-nav--NavMenu__title {
+    width: 19vw;
+  }
+  .p-nav--NavMenu__subMenu {
+    width: 19vw;
+    max-height: 100%;
+  }
+}
 .p-nav--NavMenu {
   width: 19vw;
   height: 100%;
@@ -410,8 +447,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 
 .p-section--PageTitle {
   display: block;
-  width: 81vw;
   height: 27.6vw;
+  width: 100vw;
+}
+@media only screen and (min-width:835px) {
+  .p-section--PageTitle {
+    width: 81vw;
+  }
 }
 .p-section--MainCard {
   width: 69.375vw;
