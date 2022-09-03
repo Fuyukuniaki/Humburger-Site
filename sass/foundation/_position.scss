@@ -2,7 +2,7 @@
 @use "./mixin" as *;
 
 @include media (iPad) {
-    .f-position {
+    .position {
         &--Frontpage {
             &--Body {
                 position: relative;

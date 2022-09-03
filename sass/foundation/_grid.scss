@@ -2,7 +2,7 @@
 @use "./mixin" as *;
 
 @include media (PC) {
-    .f-grid {
+    .grid {
         &--FrontPage {
             display: grid;
             grid-template-columns: repeat(2, 1fr);

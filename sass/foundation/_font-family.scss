@@ -1,5 +1,5 @@
 @use "./variable" as *;
 
-.f-font-family {
+.font-family {
     font-family: $textFont_English, $textFont_Japanese;
 }
