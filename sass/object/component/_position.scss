@@ -1,12 +1,9 @@
-@use "./variable" as *;
-@use "./mixin" as *;
+@use "../../foundation/" as *;
 
 @include media (iPad) {
-    .position {
+    .c-position {
         &--Frontpage {
-            &--Body {
-                position: relative;
-            }
+            position: relative;
             &--MainContent {
                 position: static;
                 &.inactive {
@@ -14,13 +11,14 @@
                 }
             }
             &--NavMenu {
-                position: static;
+                position: absolute;
                 top: 0;
                 left:100%;
+                right: auto;
                 &.active {
                     position: absolute;
                     top: 0;
-                    left:auto;
+                    left: auto;
                     right: 0;
                 }
             }

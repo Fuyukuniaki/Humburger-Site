@@ -11,53 +11,6 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-family: "Roboto", "M+ 1m";
 }
 
-@media only screen and (min-width:835px) {
-  .grid--FrontPage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .grid--FrontPage > .grid--FrontPage-header {
-    grid-area: 1/1/2/2;
-    align-self: start;
-  }
-  .grid--FrontPage > .grid--FrontPage-main {
-    grid-area: 2/1/3/2;
-    align-self: start;
-  }
-  .grid--FrontPage > .grid--FrontPage-nav {
-    grid-area: 1/2/3/3;
-    align-self: start;
-  }
-  .grid--FrontPage > .grid--FrontPage-footer {
-    grid-area: 3/1/4/3;
-    align-self: start;
-  }
-}
-@media only screen and (max-width:834px) {
-  .position--Frontpage--Body {
-    position: relative;
-  }
-  .position--Frontpage--MainContent {
-    position: static;
-  }
-  .position--Frontpage--MainContent.inactive {
-    position: fixed;
-  }
-  .position--Frontpage--NavMenu {
-    position: static;
-    top: 0;
-    left: 100%;
-  }
-  .position--Frontpage--NavMenu.active {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0;
-  }
-}
 .is-open {
   background-color: #FFF;
 }
@@ -107,6 +60,54 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   display: block;
 }
 
+@media only screen and (min-width:835px) {
+  .c-grid--FrontPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-header {
+    grid-area: 1/1/2/2;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-nav {
+    grid-area: 1/2/3/3;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-main {
+    grid-area: 2/1/3/2;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-footer {
+    grid-area: 3/1/4/3;
+    align-self: start;
+  }
+}
+@media only screen and (max-width:834px) {
+  .c-position--Frontpage {
+    position: relative;
+  }
+  .c-position--Frontpage--MainContent {
+    position: static;
+  }
+  .c-position--Frontpage--MainContent.inactive {
+    position: fixed;
+  }
+  .c-position--Frontpage--NavMenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: auto;
+  }
+  .c-position--Frontpage--NavMenu.active {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+}
 .c-background {
   background-color: #FFFFFF;
 }
@@ -377,6 +378,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-overflow--frontPage__NavMenu {
   overflow: hidden;
 }
+@media only screen and (max-width:834px) {
+  .c-overflow--frontPage {
+    overflow-x: hidden;
+  }
+}
 
 .p-logo {
   display: block;
@@ -443,16 +449,18 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     max-height: 100%;
   }
 }
-.p-nav--NavMenu {
-  width: 19vw;
-  height: 100%;
-}
-.p-nav--NavMenu__title {
-  width: 19vw;
-}
-.p-nav--NavMenu__subMenu {
-  width: 19vw;
-  max-height: 100%;
+@media only screen and (min-width:835px) {
+  .p-nav--NavMenu {
+    width: 19vw;
+    height: 100%;
+  }
+  .p-nav--NavMenu__title {
+    width: 19vw;
+  }
+  .p-nav--NavMenu__subMenu {
+    width: 19vw;
+    max-height: 100%;
+  }
 }
 
 .p-articles--MainCard {
