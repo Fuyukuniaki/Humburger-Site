@@ -1,13 +1,19 @@
-@use "../global" as *;
 @use "../foundation/" as *;
 
 .l-header {
-    display: flex;
-    width: $headerWidth_PC;
-    height: $headerHeight_PC;
-    justify-content: space-between;
-    align-items: center;
     @include media(iPad){
+        display: flex;
+        flex-flow: column wrap;
+        height: $headerHeight_iPad;
+        justify-content: space-between;
+        align-items: center;
         width: 100vw;
+    }
+    @include media(PC){
+        display: flex;
+        width: $headerWidth_PC;
+        height: $headerHeight_PC;
+        justify-content: space-between;
+        align-items: center;
     }
 }

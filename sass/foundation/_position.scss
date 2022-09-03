@@ -1,7 +1,8 @@
-@use "../global" as *;
-@use "../foundation/" as *;
+@use "./variable" as *;
+@use "./mixin" as *;
+
 @include media (iPad) {
-    .s-position {
+    .f-position {
         &--Frontpage {
             &--Body {
                 position: relative;

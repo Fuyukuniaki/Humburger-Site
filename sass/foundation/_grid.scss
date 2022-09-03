@@ -1,8 +1,8 @@
-@use "../../global" as *;
-@use "../../foundation/" as *;
+@use "./variable" as *;
+@use "./mixin" as *;
 
 @include media (PC) {
-    .c-grid {
+    .f-grid {
         &--FrontPage {
             display: grid;
             grid-template-columns: repeat(2, 1fr);

@@ -1,4 +1,4 @@
-@use "../../global" as *;
+@use "../../foundation/" as *;
 
 
 .c-margin {
@@ -6,7 +6,12 @@
         margin: 0;
     }
     &--Logo {
-        margin: 3.8vw auto auto 3.5vw;
+        @include media(PC){
+            margin: 3.8vw auto auto 3.5vw;
+        }
+        @include media(iPad){
+            margin: 6vw auto auto auto;
+        }
     }
     &--search {
         margin: 4.5vw 1.6vw 4.4vw auto;
