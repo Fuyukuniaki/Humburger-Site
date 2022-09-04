@@ -3,8 +3,8 @@
 .l-header {
     @include media(iPad){
         display: flex;
-        flex-flow: column wrap;
-        height: $headerHeight_iPad;
+        flex-flow: wrap;
+        height: 26vw;
         justify-content: space-between;
         align-items: center;
         width: 100vw;

@@ -5,15 +5,24 @@
     font-size: 0.83vw;
     &--Logo {
         font-size: 3.3vw;
+        @include media(iPad){
+            font-size: 4.8vw;
+        }
     }
     &--Search {
         font-size: 1.25vw;
         &__button {
             font-size: 0.83vw;
+            @include media(iPad){
+                font-size: 1.9vw;
+            }
         }
     }
     &--MainTitle {
         font-size: 2.08vw;
+        @include media(iPad){
+            font-size: 4.3vw;
+        }
     }
     &--MainCard__title {
         font-size: 4.17vw;

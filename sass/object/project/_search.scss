@@ -2,21 +2,35 @@
 .p-search {
     display: flex;
     position: relative;
+    flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
+    @include media(iPad){
+        width: 100vw;
+        display: flex;
+        position: relative;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
     &--Window {
         display: inline-block;
         position: relative;
         align-items: center;
         justify-content: flex-start;
         border: 1px solid $textColor_Gray;
-        border-radius: 10px;
+        border-radius: 0.52vw;
         width: 21vw;
         height: $searchHeight_PC;
         line-height: $searchHeight_PC;
         margin: auto 0.7vw auto auto;
         padding: 0 0 0 0.6vw;
         text-indent: $searchHeight_PC;
+        @include media(iPad){
+            height: 5.5vw;
+            width: 47vw;
+            margin: auto 1.6vw auto auto;
+        }
         &__lupe {
             content: "";
             display: inline-block;
@@ -30,19 +44,39 @@
             margin: auto 0;
             width: 1.25vw;
             height: 1.25vw;
+            @include media(iPad){
+                position: relative;
+                top: 0.8vw;
+                left: -47vw;
+                margin: 0;
+                width: 2.9vw;
+                height: 2.9vw;
+            }
         }
     }
     &--Button {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
         border: 1px solid $textColor_Gray;
-        border-radius: 10px;
+        border-radius: 0.52vw;
         background: linear-gradient($linearGradientS, $linearGradientE);
         width: 7vw;
         height: $searchHeight_PC;
+        @include media(iPad){
+            height: 5.5vw;
+            width: 16vw;
+            margin: 0 0 0 -3.6vw;
+        }
         &__text {
             display: inline-block;
             height: $searchHeight_PC;
             line-height: $searchHeight_PC;
+            @include media(iPad){
+                line-height: 5.5vw;
+                height: 5.5vw;
+            }    
         }
     }
 }

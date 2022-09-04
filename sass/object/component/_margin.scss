@@ -18,6 +18,9 @@
     }
     &--MainTitle {
         margin: 12.2vw auto 12.5px 4.7vw;
+        @include media(iPad){
+            margin: auto auto auto 10vw;
+        }
     }
     &--MainCard {
             margin: 6.1vw auto 7vw auto;

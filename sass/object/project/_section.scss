@@ -2,19 +2,34 @@
 
 .p-section {
     &--PageTitle {
-        display: block;
-        height: 27.6vw;
+        @include media(iPad){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 34vw;
+            width:100vw;
+        }
         @include media(PC){
+            display: block;
+            height: 27.6vw;
             width: $headerWidth_PC;
         }
-        width:100vw;
     }
     &--MainCard {
-        width: 69.375vw;
-        height: minmax(62.13vw,auto);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
+        @include media(PC){
+            width: 69.375vw;
+            height: minmax(62.13vw,auto);
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        @include media(iPad){
+            width: 90.7vw;
+            height: minmax(62.13vw,auto);
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
     }
     &--MainMap {
         width: 100%;

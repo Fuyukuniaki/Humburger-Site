@@ -6,6 +6,9 @@
     }
     &--MainCard {
         padding: 2.34vw 1.042vw 0 1.1vw;
+        @include media(iPad){
+            padding: 5.6vw 5vw 5.6vw 5vw;
+        }
         &__base {
             padding: 6.30vw 5.83vw 12.34vw 5.78vw;
         }

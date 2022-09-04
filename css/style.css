@@ -18,7 +18,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 @media only screen and (max-width:834px) {
   .l-header {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: wrap;
     height: 26vw;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +60,27 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   display: block;
 }
 
+@media only screen and (max-width:834px) {
+  .c-grid--FrontPage {
+    display: grid;
+    grid-template-columns: fit-content(100%);
+    grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-header {
+    grid-area: 1/1;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-main {
+    grid-area: 2/1;
+    align-self: start;
+  }
+  .c-grid--FrontPage > .c-grid--FrontPage-footer {
+    grid-area: 3/1;
+    align-self: start;
+  }
+}
 @media only screen and (min-width:835px) {
   .c-grid--FrontPage {
     display: grid;
@@ -98,14 +119,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .c-position--Frontpage--NavMenu {
     position: absolute;
     top: 0;
-    left: 100%;
-    right: auto;
+    left: auto;
+    right: 100%;
   }
   .c-position--Frontpage--NavMenu.active {
     position: absolute;
     top: 0;
-    left: auto;
-    right: 0;
+    left: 100%;
+    right: auto;
   }
 }
 .c-background {
@@ -177,6 +198,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-margin--MainTitle {
   margin: 12.2vw auto 12.5px 4.7vw;
 }
+@media only screen and (max-width:834px) {
+  .c-margin--MainTitle {
+    margin: auto auto auto 10vw;
+  }
+}
 .c-margin--MainCard {
   margin: 6.1vw auto 7vw auto;
 }
@@ -245,14 +271,29 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-text-size--Logo {
   font-size: 3.3vw;
 }
+@media only screen and (max-width:834px) {
+  .c-text-size--Logo {
+    font-size: 4.8vw;
+  }
+}
 .c-text-size--Search {
   font-size: 1.25vw;
 }
 .c-text-size--Search__button {
   font-size: 0.83vw;
 }
+@media only screen and (max-width:834px) {
+  .c-text-size--Search__button {
+    font-size: 1.9vw;
+  }
+}
 .c-text-size--MainTitle {
   font-size: 2.08vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-size--MainTitle {
+    font-size: 4.3vw;
+  }
 }
 .c-text-size--MainCard__title {
   font-size: 4.17vw;
@@ -387,12 +428,30 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .p-logo {
   display: block;
 }
+@media only screen and (max-width:834px) {
+  .p-logo {
+    display: block;
+    width: 100vw;
+    text-align: center;
+  }
+}
 
 .p-search {
   display: flex;
   position: relative;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
+}
+@media only screen and (max-width:834px) {
+  .p-search {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .p-search--Window {
   display: inline-block;
@@ -400,13 +459,20 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   align-items: center;
   justify-content: flex-start;
   border: 1px solid #707070;
-  border-radius: 10px;
+  border-radius: 0.52vw;
   width: 21vw;
   height: 2.4vw;
   line-height: 2.4vw;
   margin: auto 0.7vw auto auto;
   padding: 0 0 0 0.6vw;
   text-indent: 2.4vw;
+}
+@media only screen and (max-width:834px) {
+  .p-search--Window {
+    height: 5.5vw;
+    width: 47vw;
+    margin: auto 1.6vw auto auto;
+  }
 }
 .p-search--Window__lupe {
   content: "";
@@ -422,18 +488,44 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   width: 1.25vw;
   height: 1.25vw;
 }
+@media only screen and (max-width:834px) {
+  .p-search--Window__lupe {
+    position: relative;
+    top: 0.8vw;
+    left: -47vw;
+    margin: 0;
+    width: 2.9vw;
+    height: 2.9vw;
+  }
+}
 .p-search--Button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
   border: 1px solid #707070;
-  border-radius: 10px;
+  border-radius: 0.52vw;
   background: linear-gradient(#F2EDE9, #DED8D3);
   width: 7vw;
   height: 2.4vw;
+}
+@media only screen and (max-width:834px) {
+  .p-search--Button {
+    height: 5.5vw;
+    width: 16vw;
+    margin: 0 0 0 -3.6vw;
+  }
 }
 .p-search--Button__text {
   display: inline-block;
   height: 2.4vw;
   line-height: 2.4vw;
+}
+@media only screen and (max-width:834px) {
+  .p-search--Button__text {
+    line-height: 5.5vw;
+    height: 5.5vw;
+  }
 }
 
 @media only screen and (max-width:834px) {
@@ -469,29 +561,61 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   flex-flow: column wrap;
   justify-content: space-between;
 }
-.p-articles--MainMap {
-  width: 49.5vw;
-  height: 100%;
-  display: block;
-  aspect-ratio: 950/649;
+@media only screen and (max-width:834px) {
+  .p-articles--MainCard {
+    width: 43vw;
+  }
+}
+@media only screen and (min-width:835px) {
+  .p-articles--MainMap {
+    width: 49.5vw;
+    height: 100%;
+    display: block;
+    aspect-ratio: 950/649;
+  }
+}
+@media only screen and (max-width:834px) {
+  .p-articles--MainMap {
+    width: 100vw;
+    height: 100%;
+    display: block;
+    aspect-ratio: 1553/649;
+  }
 }
 
-.p-section--PageTitle {
-  display: block;
-  height: 27.6vw;
-  width: 100vw;
+@media only screen and (max-width:834px) {
+  .p-section--PageTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 34vw;
+    width: 100vw;
+  }
 }
 @media only screen and (min-width:835px) {
   .p-section--PageTitle {
+    display: block;
+    height: 27.6vw;
     width: 81vw;
   }
 }
-.p-section--MainCard {
-  width: 69.375vw;
-  height: minmax(62.13vw, auto);
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+@media only screen and (min-width:835px) {
+  .p-section--MainCard {
+    width: 69.375vw;
+    height: minmax(62.13vw, auto);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width:834px) {
+  .p-section--MainCard {
+    width: 90.7vw;
+    height: minmax(62.13vw, auto);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
 }
 .p-section--MainMap {
   width: 100%;

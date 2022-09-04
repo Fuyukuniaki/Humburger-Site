@@ -1,5 +1,28 @@
 @use "../../foundation/" as *;
 
+@include media (iPad) {
+    .c-grid {
+        &--FrontPage {
+            display: grid;
+            grid-template-columns: fit-content(100%);
+            grid-template-rows: fit-content($headerHeight_PC) fit-content(100%) fit-content($footerHeight_PC);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            & > &-header {
+                grid-area: 1 / 1 ;
+                align-self: start;
+            }
+            & > &-main {
+                grid-area: 2 / 1 ;
+                align-self: start;
+            }
+            & > &-footer {
+                grid-area: 3 / 1 ;
+                align-self: start;
+            }
+        }
+    }
+}
 @include media (PC) {
     .c-grid {
         &--FrontPage {
