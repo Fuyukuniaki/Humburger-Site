@@ -545,6 +545,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .p-search--Window {
     height: 5.5vw;
     width: 47vw;
+    padding: 0 0 0 4vw;
     margin: auto 1.6vw auto auto;
   }
 }
