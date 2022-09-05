@@ -26,27 +26,51 @@
     }
     &--MainCard__title {
         font-size: 4.17vw;
+        @include media(iPad){
+            font-size: 5.28vw;
+        }
     }
     &--MainCard__textTitle {
         font-size: 1.25vw;
+        @include media(iPad){
+            font-size: 2.8vw;
+        }
     }
     &--MainCard__text {
         font-size: 0.83vw;
+        @include media(iPad){
+            font-size: 1.6vw;
+        }
     }
     &--MainMap__title {
         font-size: 1.875vw;
+        @include media(iPad){
+            font-size: 3.6vw;
+        }
     }
     &--MainMap__text {
         font-size: 0.83vw;
+        @include media(iPad){
+            font-size: 1.68vw;
+        }
     }
     &--NavTitle {
         font-size: 1.77vw;
+        @include media(iPad){
+            font-size: 4.08vw;
+        }
     }
     &--NavMenu {
         font-size: 1.25vw;
+        @include media(iPad){
+            font-size: 2.9vw;
+        }
     }
     &--NavMenu__sub {
         font-size: 1.04vw;
+        @include media(iPad){
+            font-size: 2.4vw;
+        }
     }
     &--Footer__link {
         font-size: 1.04vw;
@@ -117,6 +141,11 @@
                 width: 2.91vw;
                 height: 3.28vw;
                 border-bottom: 0.21vw solid $textColor_PGray;
+                @include media(iPad){
+                    width: 4.3vw;
+                    height: 3.7vw;
+                    border-bottom: 0.48vw solid $textColor_PGray;
+                }
             }
         }
     }
@@ -130,6 +159,11 @@
                 height: 2.92vw;
                 border-bottom: 0.104vw solid $textColor_White;
                 margin-bottom: 3.33vw;
+                @include media(iPad){
+                    width: 9vw;
+                    height: 3.1vw;
+                    border-bottom: 0.24vw solid $textColor_White;
+                }
             }
         }
     }

@@ -3,13 +3,13 @@
 .p-nav {
     @include media(iPad) {
         &--NavMenu {
-            width: $navMenuWidth_PC;
+            width: $navMenuWidth_iPad;
             height: 100%;
             &__title {
-                width: $navMenuWidth_PC;
+                width: $navMenuWidth_iPad;
             }
             &__subMenu {
-                width: $navMenuWidth_PC;
+                width: $navMenuWidth_iPad;
                 max-height: 100%;
             }
         }

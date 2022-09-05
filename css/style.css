@@ -110,11 +110,19 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .c-position--Frontpage {
     position: relative;
   }
-  .c-position--Frontpage--MainContent {
-    position: static;
-  }
-  .c-position--Frontpage--MainContent.inactive {
+  .c-position--Frontpage.inactive {
     position: fixed;
+    z-index: 10;
+  }
+  .c-position--Frontpage.inactive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    z-index: 1;
   }
   .c-position--Frontpage--NavMenu {
     position: absolute;
@@ -123,14 +131,21 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     right: 100%;
   }
   .c-position--Frontpage--NavMenu.active {
+    overflow: auto;
     position: absolute;
     top: 0;
-    left: 100%;
-    right: auto;
+    left: auto;
+    right: 0;
+    z-index: 9999;
   }
 }
 .c-background {
   background-color: #FFFFFF;
+}
+@media only screen and (max-width:834px) {
+  .c-background--FrontPage-main {
+    background: #707070;
+  }
 }
 .c-background--Header {
   background-color: #FFF7EF;
@@ -255,6 +270,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-padding--MainCard {
   padding: 2.34vw 1.042vw 0 1.1vw;
 }
+@media only screen and (max-width:834px) {
+  .c-padding--MainCard {
+    padding: 3vw 1.4vw 0 1.4vw;
+  }
+}
 .c-padding--MainCard__base {
   padding: 6.3vw 5.83vw 12.34vw 5.78vw;
 }
@@ -298,26 +318,66 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-text-size--MainCard__title {
   font-size: 4.17vw;
 }
+@media only screen and (max-width:834px) {
+  .c-text-size--MainCard__title {
+    font-size: 5.28vw;
+  }
+}
 .c-text-size--MainCard__textTitle {
   font-size: 1.25vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-size--MainCard__textTitle {
+    font-size: 2.8vw;
+  }
 }
 .c-text-size--MainCard__text {
   font-size: 0.83vw;
 }
+@media only screen and (max-width:834px) {
+  .c-text-size--MainCard__text {
+    font-size: 1.6vw;
+  }
+}
 .c-text-size--MainMap__title {
   font-size: 1.875vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-size--MainMap__title {
+    font-size: 3.6vw;
+  }
 }
 .c-text-size--MainMap__text {
   font-size: 0.83vw;
 }
+@media only screen and (max-width:834px) {
+  .c-text-size--MainMap__text {
+    font-size: 1.68vw;
+  }
+}
 .c-text-size--NavTitle {
   font-size: 1.77vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-size--NavTitle {
+    font-size: 4.08vw;
+  }
 }
 .c-text-size--NavMenu {
   font-size: 1.25vw;
 }
+@media only screen and (max-width:834px) {
+  .c-text-size--NavMenu {
+    font-size: 2.9vw;
+  }
+}
 .c-text-size--NavMenu__sub {
   font-size: 1.04vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-size--NavMenu__sub {
+    font-size: 2.4vw;
+  }
 }
 .c-text-size--Footer__link {
   font-size: 1.04vw;
@@ -387,6 +447,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   height: 3.28vw;
   border-bottom: 0.21vw solid #EAEAEA;
 }
+@media only screen and (max-width:834px) {
+  .c-text-border--MainCard__title::after {
+    width: 4.3vw;
+    height: 3.7vw;
+    border-bottom: 0.48vw solid #EAEAEA;
+  }
+}
 .c-text-border--MainMap__title {
   display: inline-block;
 }
@@ -397,6 +464,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   height: 2.92vw;
   border-bottom: 0.104vw solid #FFFFFF;
   margin-bottom: 3.33vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-border--MainMap__title::after {
+    width: 9vw;
+    height: 3.1vw;
+    border-bottom: 0.24vw solid #FFFFFF;
+  }
 }
 
 .c-text-line-height--MainMap__text {
@@ -530,14 +604,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 
 @media only screen and (max-width:834px) {
   .p-nav--NavMenu {
-    width: 19vw;
+    width: 44vw;
     height: 100%;
   }
   .p-nav--NavMenu__title {
-    width: 19vw;
+    width: 44vw;
   }
   .p-nav--NavMenu__subMenu {
-    width: 19vw;
+    width: 44vw;
     max-height: 100%;
   }
 }

@@ -3,6 +3,11 @@
 
 .c-background {
     background-color: $textColor_White;
+    &--FrontPage-main{
+        @include media(iPad){
+            background: $textColor_Gray;
+        }
+    }
     &--Header   {
         background-color: $bgColor_Header;
     }

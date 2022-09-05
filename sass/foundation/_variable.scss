@@ -16,6 +16,7 @@ $linearGradientE  : #DED8D3;
 
 $bgColor_Header   : #FFF7EF;
 $bgColor_NavMenu  : #F2EDE9;
+$bgColor_NavBase  : #00000080;
 $bgColor_CardBase : #FFFDFA;
 $bgColor_CardText : #FFFFFFCC;
 $bgColor_MapText  : #0000004a;
@@ -32,6 +33,8 @@ $searchHeight_PC  : 2.4vw;
 $footerHeight_PC  : 7.8125vw;
 
 $headerHeight_iPad: 26vw;
+$navMenuWidth_iPad: 44vw;
+
 
 $breakpoints      : (
             iPhone:  "only screen and (max-width:375px)",
