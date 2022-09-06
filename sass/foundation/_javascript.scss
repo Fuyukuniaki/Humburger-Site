@@ -1,3 +1,80 @@
+@use "./variable" as *;
+@use "./mixin" as *;
+@include media(iPad){
 .is-open {
     background-color: #FFF;
+}
+
+.js-body {
+    width:100vw;
+    &::before {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: $bgColor_NavBase;
+        z-index: 0;
+        transition: opacity 1s;
+    }
+    &.inactive {
+        position: fixed;
+        z-index: 10;
+        &::before {
+            content: "";
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: $bgColor_NavBase;
+            z-index: 1;
+            transition: opacity 1s;
+        }
+    }
+}
+.js-nav {
+    transition: right 1s;
+    &.active {
+        overflow: auto;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        z-index: 9999;
+        transition: right 1s;
+    }
+}
+.js-clickable {
+    position: absolute;
+    top: 3.6vw;
+    font-size: 4.1vw;
+    right: 2.9vw;
+    color: $textColor_Gray;
+    &.js-clicked {
+        position: absolute;
+        top: 2.8vw;
+        right: 2.8vw;
+        z-index: 10000;
+        font-size: 0;
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            top: 1.9vw;
+            right: 2.8vw;
+            width: 3.8vw;
+            height: 0.5vw;
+            background-color: $textColor_Gray;
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+}
 }

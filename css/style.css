@@ -11,10 +11,83 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-family: "Roboto", "M+ 1m";
 }
 
-.is-open {
-  background-color: #FFF;
+@media only screen and (max-width:834px) {
+  .is-open {
+    background-color: #FFF;
+  }
+  .js-body {
+    width: 100vw;
+  }
+  .js-body::before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    z-index: 0;
+    transition: opacity 1s;
+  }
+  .js-body.inactive {
+    position: fixed;
+    z-index: 10;
+  }
+  .js-body.inactive::before {
+    content: "";
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    z-index: 1;
+    transition: opacity 1s;
+  }
+  .js-nav {
+    transition: right 1s;
+  }
+  .js-nav.active {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 9999;
+    transition: right 1s;
+  }
+  .js-clickable {
+    position: absolute;
+    top: 3.6vw;
+    font-size: 4.1vw;
+    right: 2.9vw;
+    color: #707070;
+  }
+  .js-clickable.js-clicked {
+    position: absolute;
+    top: 2.8vw;
+    right: 2.8vw;
+    z-index: 10000;
+    font-size: 0;
+  }
+  .js-clickable.js-clicked::before, .js-clickable.js-clicked::after {
+    content: "";
+    position: absolute;
+    top: 1.9vw;
+    right: 2.8vw;
+    width: 3.8vw;
+    height: 0.5vw;
+    background-color: #707070;
+  }
+  .js-clickable.js-clicked::before {
+    transform: rotate(-45deg);
+  }
+  .js-clickable.js-clicked::after {
+    transform: rotate(45deg);
+  }
 }
-
 @media only screen and (max-width:834px) {
   .l-header {
     display: flex;
@@ -63,7 +136,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 @media only screen and (max-width:834px) {
   .c-grid--FrontPage {
     display: grid;
-    grid-template-columns: fit-content(100%);
+    grid-template-columns: 1fr;
     grid-template-rows: fit-content(11.3vw) fit-content(100%) fit-content(7.8125vw);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -110,33 +183,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .c-position--Frontpage {
     position: relative;
   }
-  .c-position--Frontpage.inactive {
-    position: fixed;
-    z-index: 10;
-  }
-  .c-position--Frontpage.inactive::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5019607843);
-    z-index: 1;
-  }
-  .c-position--Frontpage--NavMenu {
+  .c-position--NavMenu {
     position: absolute;
     top: 0;
     left: auto;
-    right: 100%;
-  }
-  .c-position--Frontpage--NavMenu.active {
-    overflow: auto;
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0;
-    z-index: 9999;
+    right: -44vw;
   }
 }
 .c-background {
