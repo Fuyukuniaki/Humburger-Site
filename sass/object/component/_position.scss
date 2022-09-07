@@ -6,10 +6,7 @@
             position: relative;
             }
         &--NavMenu {
-            position: absolute;
-            top: 0;
-            left: auto;
-            right: $navMenuWidth_iPad * -1;
+            transition: all 1s;
         }
     }
 }

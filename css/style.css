@@ -28,7 +28,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5019607843);
     z-index: 0;
-    transition: opacity 1s;
+    transition: all 1s;
   }
   .js-body.inactive {
     position: fixed;
@@ -44,10 +44,15 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5019607843);
     z-index: 1;
-    transition: opacity 1s;
+    transition: all 1s;
   }
   .js-nav {
-    transition: right 1s;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: -44vw;
+    z-index: 0;
+    transition: all 10s;
   }
   .js-nav.active {
     overflow: auto;
@@ -56,7 +61,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     left: auto;
     right: 0;
     z-index: 9999;
-    transition: right 1s;
+    transition: all 1s;
   }
   .js-clickable {
     position: absolute;
@@ -184,10 +189,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     position: relative;
   }
   .c-position--NavMenu {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: -44vw;
+    transition: all 1s;
   }
 }
 .c-background {
