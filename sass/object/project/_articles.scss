@@ -9,6 +9,11 @@
         @include media(iPad){
             width: 43vw;
         }
+        @include media(iPhone){
+            width: 89.3vw;
+            min-height: 171.2vw;
+            max-height: auto;
+        }
     }
     &__MainMap {
         @include media(PC){

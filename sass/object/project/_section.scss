@@ -2,17 +2,24 @@
 
 .p-section {
     &__PageTitle {
+        @include media(PC){
+            display: block;
+            height: 27.6vw;
+            width: $headerWidth_PC;
+        }
         @include media(iPad){
             display: flex;
             justify-content: flex-start;
             align-items: center;
             height: 34vw;
-            width:100vw;
+            width: 100vw;
         }
-        @include media(PC){
-            display: block;
-            height: 27.6vw;
-            width: $headerWidth_PC;
+        @include media(iPhone){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height:76.8vw;
+            width: 100vw;
         }
     }
     &__MainCard {
@@ -28,6 +35,14 @@
             height: minmax(62.13vw,auto);
             display: flex;
             flex-flow: row;
+            justify-content: space-between;
+        }
+        @include media(iPhone){
+            width: 89.3vw;
+            max-height: auto;
+            gap: 5.33vw;
+            display: flex;
+            flex-flow: column wrap;
             justify-content: space-between;
         }
     }

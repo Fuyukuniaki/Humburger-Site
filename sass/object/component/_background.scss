@@ -4,8 +4,6 @@
 .c-background {
     background-color: $textColor_White;
     &__FrontPage-main{
-        @include media(iPad){
-        }
     }
     &__Header   {
         background-color: $bgColor_Header;
@@ -17,6 +15,10 @@
         background: url(/images/bg_frontpage_main.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
+        @include media(iPhone){
+            background-position: top right;
+        }
     }
     &__MainCard {
         &--takeout {

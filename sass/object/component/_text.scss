@@ -8,6 +8,9 @@
         @include media(iPad){
             font-size: 4.8vw;
         }
+        @include media(iPhone){
+            font-size: 10.6vw;
+        }
     }
     &__Search {
         font-size: 1.25vw;

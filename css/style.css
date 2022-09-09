@@ -162,6 +162,12 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   background: url(/images/bg_frontpage_main.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+@media only screen and (max-width:599px) {
+  .c-background__MainTitle {
+    background-position: top right;
+  }
 }
 .c-background__MainCard--takeout {
   background: url(/images/bg_takeout.png);
@@ -299,6 +305,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 @media only screen and (max-width:834px) {
   .c-text-size__Logo {
     font-size: 4.8vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-text-size__Logo {
+    font-size: 10.6vw;
   }
 }
 .c-text-size__Search {
@@ -683,6 +694,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 43vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .p-articles__MainCard {
+    width: 89.3vw;
+    min-height: 171.2vw;
+    max-height: auto;
+  }
+}
 @media only screen and (min-width:835px) {
   .p-articles__MainMap {
     width: 49.5vw;
@@ -700,6 +718,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 
+@media only screen and (min-width:835px) {
+  .p-section__PageTitle {
+    display: block;
+    height: 27.6vw;
+    width: 81vw;
+  }
+}
 @media only screen and (max-width:834px) {
   .p-section__PageTitle {
     display: flex;
@@ -709,11 +734,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 100vw;
   }
 }
-@media only screen and (min-width:835px) {
+@media only screen and (max-width:599px) {
   .p-section__PageTitle {
-    display: block;
-    height: 27.6vw;
-    width: 81vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 76.8vw;
+    width: 100vw;
   }
 }
 @media only screen and (min-width:835px) {
@@ -731,6 +758,16 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: minmax(62.13vw, auto);
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width:599px) {
+  .p-section__MainCard {
+    width: 89.3vw;
+    max-height: auto;
+    gap: 5.33vw;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: space-between;
   }
 }
