@@ -2,11 +2,25 @@
 
 @include media (iPad) {
     .c-position {
-        &--Frontpage {
+        &--FrontPage {
             position: relative;
+            &.inactive {
+                position: fixed;
             }
+        }
         &--NavMenu {
-            transition: all 1s;
+            position: fixed;
+            top: 0;
+            left: 100%;
+            right: $navMenuWidth_iPad * -1;
+            transition: right 1s;
+            &.active {
+                position: absolute;
+                top: 0;
+                left: auto;
+                right: 0;
+                transition: right 1s;
+            }
         }
     }
 }

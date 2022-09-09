@@ -1,11 +1,18 @@
 @use "../../foundation/" as *;
 
 .c-overflow {
-    &--frontPage {
-        &__NavMenu {
+    &--FrontPage {
+        &__navMenu {
             overflow: hidden;
         }
         @include media(iPad){
+            overflow-x: hidden;
+        }
+    }
+    &--NavMenu {
+        overflow: hidden;
+        &.active {
+            overflow-y: scroll;
             overflow-x: hidden;
         }
     }

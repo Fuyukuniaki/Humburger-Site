@@ -1,0 +1,29 @@
+@use "../../foundation/" as *;
+.c-z-index {
+    &__9999 {
+        z-index: 9999;
+    }
+    &__0000 {
+        z-index: 0;
+    }
+    &__0001 {
+        z-index: 1;
+    }
+    &--FrontPage {
+        &::before {
+            z-index: 0;
+        }
+        &.inactive {
+            z-index: 10;
+            &::before {
+                z-index: 1;
+            }
+        }
+    }
+    &--NavMenu {
+        z-index: 0;
+        &.active {
+            z-index: 9999;
+        }
+    }
+}
