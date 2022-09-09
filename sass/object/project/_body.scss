@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 
 @include media(iPad){
-    .p-body--FrontPage {
+    .p-body__FrontPage {
         &::before {
             display: none;
             content: "";

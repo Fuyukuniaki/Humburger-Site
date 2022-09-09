@@ -2,7 +2,7 @@
 
 @include media (iPad) {
     .c-grid {
-        &--FrontPage {
+        &__FrontPage {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: fit-content($headerHeight_PC) fit-content(100%) fit-content($footerHeight_PC);
@@ -25,7 +25,7 @@
 }
 @include media (PC) {
     .c-grid {
-        &--FrontPage {
+        &__FrontPage {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: fit-content($headerHeight_PC) fit-content(100%) fit-content($footerHeight_PC);

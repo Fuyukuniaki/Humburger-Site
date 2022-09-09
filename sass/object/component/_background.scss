@@ -3,45 +3,45 @@
 
 .c-background {
     background-color: $textColor_White;
-    &--FrontPage-main{
+    &__FrontPage-main{
         @include media(iPad){
         }
     }
-    &--Header   {
+    &__Header   {
         background-color: $bgColor_Header;
     }
-    &--NavMenu  {
+    &__NavMenu  {
         background-color: $bgColor_NavMenu;
     }
-    &--MainTitle {
+    &__MainTitle {
         background: url(/images/bg_frontpage_main.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
-    &--MainCard {
-        &__takeout {
+    &__MainCard {
+        &--takeout {
             background: url(/images/bg_takeout.png);
             background-size: cover;
             background-repeat: no-repeat;
         }
-        &__eatin {
+        &--eatin {
             background: url(/images/bg_eatin.png);
             background-size: cover;
             background-repeat: no-repeat;
         }
-        &__text {
+        &--text {
             background-color: $bgColor_CardText;
         }
     }
-    &--Map {
-        &__text  {
+    &__Map {
+        &--text  {
             background-color: $bgColor_MapText;
         }
-        &__img   {
+        &--img   {
             background: center / cover no-repeat url(/images/map.png), $bgColor_MapImg;
         }
     }
-    &__Footer   {
+    &--Footer   {
         background-color: $bgColor_Footer;
     }
 }

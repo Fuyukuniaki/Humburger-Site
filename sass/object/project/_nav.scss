@@ -2,30 +2,30 @@
 
 .p-nav {
     @include media(iPad) {
-        &--NavMenu {
+        &__NavMenu {
             width: $navMenuWidth_iPad;
             height: 100%;
-            &.active > &__title {
+            &.active > &--title {
                 visibility: hidden;
                 width: $navMenuWidth_iPad;
             }
-            &__title {
+            &--title {
                 width: $navMenuWidth_iPad;
             }
-            &__subMenu {
+            &--subMenu {
                 width: $navMenuWidth_iPad;
                 min-height: 100%;
             }
         }
     }
     @include media(PC){
-        &--NavMenu {
+        &__NavMenu {
             width: $navMenuWidth_PC;
             height: 100%;
-            &__title {
+            &--title {
                 width: $navMenuWidth_PC;
             }
-            &__subMenu {
+            &--subMenu {
                 width: $navMenuWidth_PC;
                 max-height: 100%;
             }

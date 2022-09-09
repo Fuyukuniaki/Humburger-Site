@@ -3,13 +3,13 @@
 
 .c-color {
     color: $textColor_Gray;
-    &--White {
+    &__White {
         color: $textColor_White;
     }
-    &--PGray {
+    &__PGray {
         color: $textColor_PGray;
     }
-    &--Brown {
+    &__Brown {
         color: $textColor_Brown;
     }
 }

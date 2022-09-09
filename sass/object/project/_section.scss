@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 
 .p-section {
-    &--PageTitle {
+    &__PageTitle {
         @include media(iPad){
             display: flex;
             justify-content: flex-start;
@@ -15,7 +15,7 @@
             width: $headerWidth_PC;
         }
     }
-    &--MainCard {
+    &__MainCard {
         @include media(PC){
             width: 69.375vw;
             height: minmax(62.13vw,auto);
@@ -31,7 +31,7 @@
             justify-content: space-between;
         }
     }
-    &--MainMap {
+    &__MainMap {
         width: 100%;
         height: auto;
         display: block;

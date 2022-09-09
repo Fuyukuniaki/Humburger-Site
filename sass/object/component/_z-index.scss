@@ -1,15 +1,15 @@
 @use "../../foundation/" as *;
 .c-z-index {
-    &__9999 {
+    &--9999 {
         z-index: 9999;
     }
-    &__0000 {
+    &--0000 {
         z-index: 0;
     }
-    &__0001 {
+    &--0001 {
         z-index: 1;
     }
-    &--FrontPage {
+    &__FrontPage {
         &::before {
             z-index: 0;
         }
@@ -20,7 +20,7 @@
             }
         }
     }
-    &--NavMenu {
+    &__NavMenu {
         z-index: 0;
         &.active {
             z-index: 9999;

@@ -2,13 +2,13 @@
 
 @include media (iPad) {
     .c-position {
-        &--FrontPage {
+        &__FrontPage {
             position: relative;
             &.inactive {
                 position: fixed;
             }
         }
-        &--NavMenu {
+        &__NavMenu {
             position: fixed;
             top: 0;
             left: 100%;

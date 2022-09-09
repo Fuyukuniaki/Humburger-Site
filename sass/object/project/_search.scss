@@ -13,7 +13,7 @@
         justify-content: center;
         align-items: center;
     }
-    &--Window {
+    &__Window {
         display: inline-block;
         position: relative;
         align-items: center;
@@ -32,7 +32,7 @@
             padding: 0 0 0 4vw;
             margin: auto 1.6vw auto auto;
         }
-        &__lupe {
+        &--lupe {
             content: "";
             display: inline-block;
             position: absolute;
@@ -55,7 +55,7 @@
             }
         }
     }
-    &--Button {
+    &__Button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,7 +70,7 @@
             width: 16vw;
             margin: 0 0 0 -3.6vw;
         }
-        &__text {
+        &--text {
             display: inline-block;
             height: $searchHeight_PC;
             line-height: $searchHeight_PC;

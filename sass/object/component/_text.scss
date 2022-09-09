@@ -3,137 +3,137 @@
 
 .c-text-size {
     font-size: 0.83vw;
-    &--Logo {
+    &__Logo {
         font-size: 3.3vw;
         @include media(iPad){
             font-size: 4.8vw;
         }
     }
-    &--Search {
+    &__Search {
         font-size: 1.25vw;
-        &__button {
+        &--button {
             font-size: 0.83vw;
             @include media(iPad){
                 font-size: 1.9vw;
             }
         }
     }
-    &--MainTitle {
+    &__MainTitle {
         font-size: 2.08vw;
         @include media(iPad){
             font-size: 4.3vw;
         }
     }
-    &--MainCard__title {
+    &__MainCard--title {
         font-size: 4.17vw;
         @include media(iPad){
             font-size: 5.28vw;
         }
     }
-    &--MainCard__textTitle {
+    &__MainCard--textTitle {
         font-size: 1.25vw;
         @include media(iPad){
             font-size: 2.8vw;
         }
     }
-    &--MainCard__text {
+    &__MainCard--text {
         font-size: 0.83vw;
         @include media(iPad){
             font-size: 1.6vw;
         }
     }
-    &--MainMap__title {
+    &__MainMap--title {
         font-size: 1.875vw;
         @include media(iPad){
             font-size: 3.6vw;
         }
     }
-    &--MainMap__text {
+    &__MainMap--text {
         font-size: 0.83vw;
         @include media(iPad){
             font-size: 1.68vw;
         }
     }
-    &--NavTitle {
+    &__NavTitle {
         font-size: 1.77vw;
         @include media(iPad){
             font-size: 4.08vw;
         }
     }
-    &--NavMenu {
+    &__NavMenu {
         font-size: 1.25vw;
         @include media(iPad){
             font-size: 2.9vw;
         }
     }
-    &--NavMenu__sub {
+    &__NavMenu--sub {
         font-size: 1.04vw;
         @include media(iPad){
             font-size: 2.4vw;
         }
     }
-    &--Footer__link {
+    &__Footer--link {
         font-size: 1.04vw;
     }
-    &--Footer__copyright {
+    &__Footer--copyright {
         font-size: 0.73vw;
     }
 }
 .c-text-weight {
     font-weight: $textFont_WeightRegular;
-    &__bold {
+    &--bold {
         font-weight: $textFont_WeightBold;
     }
-    &__regular {
+    &--regular {
         font-weight: $textFont_WeightRegular;
     }
 }
 .c-text-text-align {
-    &__center {
+    &--center {
         text-align: center;
     }
-    &__right {
+    &--right {
         text-align: right;
     }
 }
 .c-text-color {
-    &--Logo {
+    &__Logo {
         color: $textColor_Gray;
     }
-    &--MainTitle {
+    &__MainTitle {
         color: $textColor_White;
     }
-    &--MainCard__title {
+    &__MainCard--title {
         color: $textColor_PGray;
     }
-    &--MainCard__textTitle {
+    &__MainCard--textTitle {
         color: $textColor_Brown;
     }
-    &--MainCard__text {
+    &__MainCard--text {
         color: $textColor_Brown;
     }
-    &--MainMap__title {
+    &__MainMap--title {
         color: $textColor_White;
     }
-    &--MainMap__text {
+    &__MainMap--text {
         color: $textColor_White;
     }
-    &--NavTitle {
+    &__NavTitle {
         color: $textColor_Gray;
     }
-    &--NavMenu {
+    &__NavMenu {
         color: $textColor_Gray;
     }
-    &--Footer__link {
+    &__Footer--link {
         color: $textColor_White;
     }
-    &--Footer__copyright {
+    &__Footer--copyright {
         color: $textColor_White;
     }
 }
 .c-text-border {
-    &--MainCard {
-        &__title {
+    &__MainCard {
+        &--title {
             display: inline-block;
             &::after {
                 display: block;
@@ -149,8 +149,8 @@
             }
         }
     }
-    &--MainMap {
-        &__title {
+    &__MainMap {
+        &--title {
             display: inline-block;
             &::after {
                 display: block;
@@ -169,18 +169,18 @@
     }
 }
 .c-text-line-height{
-    &--MainMap__text {
+    &__MainMap--text {
         line-height: 2em;
     }
 }
 .c-text-indent {
-    &__subMenu {
+    &--subMenu {
         text-indent: 0.83vw;
     }
 }
 .c-text-separate {
-    &--Footer {
-        &__list {
+    &__Footer {
+        &--list {
             &::after {
                 content:"|";
                 display: inline;
@@ -189,7 +189,7 @@
     }
 }
 .c-text-decoration {
-    &--None {
+    &__None {
         text-decoration: none;
     }
 }

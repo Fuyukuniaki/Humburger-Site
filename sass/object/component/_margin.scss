@@ -2,10 +2,10 @@
 
 
 .c-margin {
-    &--AllZero {
+    &__AllZero {
         margin: 0;
     }
-    &--Logo {
+    &__Logo {
         @include media(PC){
             margin: 3.8vw auto auto 3.5vw;
         }
@@ -13,58 +13,58 @@
             margin: 6vw auto auto auto;
         }
     }
-    &--search {
+    &__search {
         margin: 4.5vw 1.6vw 4.4vw auto;
     }
-    &--MainTitle {
+    &__MainTitle {
         margin: 12.2vw auto 12.5px 4.7vw;
         @include media(iPad){
             margin: auto auto auto 10vw;
         }
     }
-    &--MainCard {
+    &__MainCard {
             margin: 6.1vw auto 7vw auto;
-        &__title {
+        &--title {
             margin: 2.4vw auto 2.9vw 0.98vw;
         }
-        &__border {
+        &--border {
             margin: auto auto auto 1.4vw;
         }
-        &__textBox {
+        &--textBox {
             margin: min(34.375vw) 0 0 0;
         }
-        &__textTitle {
+        &--textTitle {
             margin: 0 auto 1.0vw 0;
         }
-        &__text {
+        &--text {
             margin: 0 0 1.04vw 0;
         }
     }
-    &--MainMap__title {
+    &__MainMap--title {
         margin: 0 2.8vw auto 0;
     }
-    &--MainMap__border {
+    &__MainMap--border {
         margin: 3.8vw auto 3.3vw 0;
     }
-    &--NavTitle {
+    &__NavTitle {
         margin: 4.89vw auto 5.15vw 2.5vw;
     }
-    &--NavMenu {
+    &__NavMenu {
         margin: 0 auto 2.39vw 2.4vw;
     }
-    &--NavMenuSub {
+    &__NavMenuSub {
         margin: 0 auto 3.1vw 0;
-        &__title {
+        &--title {
             margin: 0 auto 2.083vw 0;
         }
-        &__text {
+        &--text {
             margin: 0 auto 1.6vw 0;
         }
     }
-    &--Footer__link {
+    &__Footer--link {
         margin: 2.3vw auto 0 auto;
     }
-    &--Footer__copyright {
+    &__Footer--copyright {
         margin: 2vw auto 1.5vw auto;
     }
 }

@@ -1,6 +1,6 @@
 @use "../../foundation/" as *;
 .p-articles{
-    &--MainCard {
+    &__MainCard {
         width: 33vw;
         display: flex;
         flex-flow: column wrap;
@@ -10,7 +10,7 @@
             width: 43vw;
         }
     }
-    &--MainMap {
+    &__MainMap {
         @include media(PC){
             width: 49.5vw;
             height: 100%;

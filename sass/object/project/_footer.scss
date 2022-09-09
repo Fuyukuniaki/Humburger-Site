@@ -2,10 +2,10 @@
 .p-footer {
     display: flex;
     flex-flow: column wrap;
-    &--Link {
+    &__Link {
         display: flex;
         flex-flow: row nowrap;
-        &__text {
+        &--text {
             display: inline;
             &::after {
                 content:"|";
