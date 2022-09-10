@@ -1,6 +1,13 @@
 @use "../foundation/" as *;
 
 .l-header {
+    @include media(PC){
+        display: flex;
+        width: $headerWidth_PC;
+        height: $headerHeight_PC;
+        justify-content: space-between;
+        align-items: center;
+    }
     @include media(iPad){
         display: flex;
         flex-flow: wrap;
@@ -9,11 +16,12 @@
         align-items: center;
         width: 100vw;
     }
-    @include media(PC){
+    @include media(iPhone){
         display: flex;
-        width: $headerWidth_PC;
-        height: $headerHeight_PC;
+        flex-flow: wrap;
+        height: 58.7vw;
         justify-content: space-between;
         align-items: center;
+        width: 100vw;
     }
 }

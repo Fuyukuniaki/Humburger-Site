@@ -7,6 +7,15 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   text-decoration: none;
 }
 
+@media only screen and (min-width:835px) {
+  .l-header {
+    display: flex;
+    width: 81vw;
+    height: 11.3vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 @media only screen and (max-width:834px) {
   .l-header {
     display: flex;
@@ -17,13 +26,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 100vw;
   }
 }
-@media only screen and (min-width:835px) {
+@media only screen and (max-width:599px) {
   .l-header {
     display: flex;
-    width: 81vw;
-    height: 11.3vw;
+    flex-flow: wrap;
+    height: 58.7vw;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
   }
 }
 
@@ -54,6 +64,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 
 .c-font-family {
   font-family: "Roboto", "M+ 1m";
+}
+.c-font-family__FontAwesome {
+  font-family: "Font Awesome 6 Free";
 }
 
 .c-z-index--9999 {
@@ -149,6 +162,29 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     transition: right 1s;
   }
 }
+@media only screen and (max-width:834px) {
+  .c-size__FrontPage {
+    width: 100vw;
+  }
+  .c-size__FrontPage::before {
+    width: 100vw;
+    height: 100%;
+  }
+  .c-size__FrontPage.inactive::before {
+    width: 100vw;
+    height: 100%;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-size__MainCard--base {
+    width: 81vw;
+    height: 33vw;
+  }
+  .c-size__MainCard--text {
+    height: 18.1vw;
+    width: 76vw;
+  }
+}
 .c-background {
   background-color: #FFFFFF;
 }
@@ -159,14 +195,17 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   background-color: #F2EDE9;
 }
 .c-background__MainTitle {
-  background: url(/images/bg_frontpage_main.png);
+  background-image: image-set(url(/images/mainvisual-pc.jpg) 1x, url(/images/mainvisual-pc@2x.jpg) 2x);
+  background-image: -webkit-image-set(url(/images/mainvisual-pc.jpg) 1x, url(/images/mainvisual-pc@2x.jpg) 2x);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media only screen and (max-width:599px) {
   .c-background__MainTitle {
-    background-position: top right;
+    background-image: image-set(url(/images/mainvisual-sp.jpg) 1x, url(/images/mainvisual-sp@2x.jpg) 2x);
+    background-image: -webkit-image-set(url(/images/mainvisual-sp.jpg) 1x, url(/images/mainvisual-sp@2x.jpg) 2x);
+    background-position: bottom right;
   }
 }
 .c-background__MainCard--takeout {
@@ -218,6 +257,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     margin: 6vw auto auto auto;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-margin__Logo {
+    margin: 12vw auto auto auto;
+  }
+}
 .c-margin__search {
   margin: 4.5vw 1.6vw 4.4vw auto;
 }
@@ -241,11 +285,21 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-margin__MainCard--textBox {
   margin: 34.375vw 0 0 0;
 }
+@media only screen and (max-width:599px) {
+  .c-margin__MainCard--textBox {
+    margin: 75vw 0 0 0;
+  }
+}
 .c-margin__MainCard--textTitle {
   margin: 0 auto 1vw 0;
 }
 .c-margin__MainCard--text {
   margin: 0 0 1.04vw 0;
+}
+@media only screen and (max-width:599px) {
+  .c-margin__MainCard--text {
+    margin: 0 0 4vw 0;
+  }
 }
 .c-margin__MainMap--title {
   margin: 0 2.8vw auto 0;
@@ -286,11 +340,21 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     padding: 3vw 1.4vw 0 1.4vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-padding__MainCard {
+    padding: 3vw 4vw 1.4vw 4vw;
+  }
+}
 .c-padding__MainCard--base {
   padding: 6.3vw 5.83vw 12.34vw 5.78vw;
 }
 .c-padding__MainCard--text {
   padding: 1.09vw 1.15vw 1.09vw 1.042vw;
+}
+@media only screen and (max-width:599px) {
+  .c-padding__MainCard--text {
+    padding: 2.5vw 2.7vw;
+  }
 }
 .c-padding__MainMap--textBase {
   padding: 4.84vw 7.45vw 3.8vw 5.99vw;
@@ -323,12 +387,22 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     font-size: 1.9vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-text-size__Search--button {
+    font-size: 4.3vw;
+  }
+}
 .c-text-size__MainTitle {
   font-size: 2.08vw;
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainTitle {
     font-size: 4.3vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-text-size__MainTitle {
+    font-size: 9.6vw;
   }
 }
 .c-text-size__MainCard--title {
@@ -339,6 +413,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     font-size: 5.28vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-text-size__MainCard--title {
+    font-size: 11vw;
+  }
+}
 .c-text-size__MainCard--textTitle {
   font-size: 1.25vw;
 }
@@ -347,12 +426,22 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     font-size: 2.8vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-text-size__MainCard--textTitle {
+    font-size: 5.9vw;
+  }
+}
 .c-text-size__MainCard--text {
   font-size: 0.83vw;
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainCard--text {
     font-size: 1.6vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-text-size__MainCard--text {
+    font-size: 4.3vw;
   }
 }
 .c-text-size__MainMap--title {
@@ -422,6 +511,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-text-color__Logo {
   color: #707070;
 }
+.c-text-color__Search {
+  color: #707070;
+}
 .c-text-color__MainTitle {
   color: #FFFFFF;
 }
@@ -470,6 +562,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     border-bottom: 0.48vw solid #EAEAEA;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-text-border__MainCard--title::after {
+    width: 9.04vw;
+    height: 4vw;
+    border-bottom: 1.1vw solid #EAEAEA;
+  }
+}
 .c-text-border__MainMap--title {
   display: inline-block;
 }
@@ -512,6 +611,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 @media only screen and (max-width:834px) {
   .c-overflow__FrontPage {
     overflow-x: hidden;
+  }
+}
+@media only screen and (max-width:834px) {
+  .c-overflow__MainCard--text {
+    overflow: hidden;
   }
 }
 .c-overflow__NavMenu {
@@ -572,13 +676,18 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     margin: auto 1.6vw auto auto;
   }
 }
+@media only screen and (max-width:599px) {
+  .p-search__Window {
+    height: 12.3vw;
+    width: 61.3vw;
+    padding: 0 0 0 8vw;
+    margin: auto -1.6vw auto auto;
+    border-radius: 2.7vw;
+  }
+}
 .p-search__Window--lupe {
-  content: "";
   display: inline-block;
   position: absolute;
-  background-image: url(/images/icon_lupe.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   top: 0;
   bottom: 0;
   left: 0.6vw;
@@ -589,11 +698,24 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 @media only screen and (max-width:834px) {
   .p-search__Window--lupe {
     position: relative;
-    top: 0.8vw;
+    top: 1.8px;
     left: -47vw;
     margin: 0;
     width: 2.9vw;
+    font-size: 2.9vw;
     height: 2.9vw;
+    line-height: 2.9vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .p-search__Window--lupe {
+    position: relative;
+    top: 0.3vw;
+    left: -58.5vw;
+    margin: 0;
+    width: 6.4vw;
+    height: 6.4vw;
+    font-size: 5vw;
   }
 }
 .p-search__Button {
@@ -614,6 +736,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     margin: 0 0 0 -3.6vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .p-search__Button {
+    height: 12.3vw;
+    width: 20.8vw;
+    margin: 0 0 0 -3.2vw;
+    border-radius: 2.7vw;
+  }
+}
 .p-search__Button--text {
   display: inline-block;
   height: 2.4vw;
@@ -623,6 +753,12 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .p-search__Button--text {
     line-height: 5.5vw;
     height: 5.5vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .p-search__Button--text {
+    line-height: 12.3vw;
+    height: 12.3vw;
   }
 }
 
@@ -739,7 +875,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 76.8vw;
+    height: 74.7vw;
     width: 100vw;
   }
 }
@@ -804,6 +940,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-size: 4.1vw;
   right: 2.9vw;
   color: #707070;
+}
+@media only screen and (max-width:599px) {
+  .p-button__clickable {
+    font-size: 5.5vw;
+  }
 }
 .p-button__clickable.clicked {
   position: absolute;

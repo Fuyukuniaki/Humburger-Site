@@ -9,6 +9,13 @@
             overflow-x: hidden;
         }
     }
+    &__MainCard {
+        &--text {
+            @include media(iPad){
+                overflow: hidden;
+            }
+        }
+    }
     &__NavMenu {
         overflow: hidden;
         &.active {

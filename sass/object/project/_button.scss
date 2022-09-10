@@ -7,6 +7,9 @@
         font-size: 4.1vw;
         right: 2.9vw;
         color: $textColor_Gray;
+        @include media(iPhone){
+            font-size: 5.5vw;
+        }
         &.clicked {
             position: absolute;
             top: 2.8vw;

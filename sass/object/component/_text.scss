@@ -19,6 +19,9 @@
             @include media(iPad){
                 font-size: 1.9vw;
             }
+            @include media(iPhone){
+                font-size: 4.3vw;
+            }
         }
     }
     &__MainTitle {
@@ -26,11 +29,17 @@
         @include media(iPad){
             font-size: 4.3vw;
         }
+        @include media(iPhone){
+            font-size: 9.6vw;
+        }
     }
     &__MainCard--title {
         font-size: 4.17vw;
         @include media(iPad){
             font-size: 5.28vw;
+        }
+        @include media(iPhone){
+            font-size: 11vw;
         }
     }
     &__MainCard--textTitle {
@@ -38,11 +47,17 @@
         @include media(iPad){
             font-size: 2.8vw;
         }
+        @include media(iPhone){
+            font-size: 5.9vw;
+        }
     }
     &__MainCard--text {
         font-size: 0.83vw;
         @include media(iPad){
             font-size: 1.6vw;
+        }
+        @include media(iPhone){
+            font-size: 4.3vw;
         }
     }
     &__MainMap--title {
@@ -103,6 +118,9 @@
     &__Logo {
         color: $textColor_Gray;
     }
+    &__Search {
+        color: $textColor_Gray;
+    }
     &__MainTitle {
         color: $textColor_White;
     }
@@ -148,6 +166,11 @@
                     width: 4.3vw;
                     height: 3.7vw;
                     border-bottom: 0.48vw solid $textColor_PGray;
+                }
+                @include media(iPhone){
+                    width: 9.04vw;
+                    height: 4vw;
+                    border-bottom: 1.1vw solid $textColor_PGray;
                 }
             }
         }

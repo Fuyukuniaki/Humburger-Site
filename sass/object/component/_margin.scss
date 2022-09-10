@@ -12,6 +12,9 @@
         @include media(iPad){
             margin: 6vw auto auto auto;
         }
+        @include media(iPhone){
+            margin: 12vw auto auto auto;
+        }
     }
     &__search {
         margin: 4.5vw 1.6vw 4.4vw auto;
@@ -32,12 +35,18 @@
         }
         &--textBox {
             margin: min(34.375vw) 0 0 0;
+            @include media(iPhone){
+                margin: min(75vw) 0 0 0;
+            }
         }
         &--textTitle {
             margin: 0 auto 1.0vw 0;
         }
         &--text {
             margin: 0 0 1.04vw 0;
+            @include media(iPhone){
+                margin: 0 0 4vw 0;
+            }
         }
     }
     &__MainMap--title {

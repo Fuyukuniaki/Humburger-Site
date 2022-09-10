@@ -2,4 +2,7 @@
 
 .c-font-family {
     font-family: $textFont_English, $textFont_Japanese;
+    &__FontAwesome {
+        font-family: $textFont_Icon;
+    }
 }

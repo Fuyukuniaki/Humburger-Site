@@ -32,13 +32,20 @@
             padding: 0 0 0 4vw;
             margin: auto 1.6vw auto auto;
         }
+        @include media(iPhone){
+            height: 12.3vw;
+            width: 61.3vw;
+            padding: 0 0 0 8vw;
+            margin: auto -1.6vw auto auto;
+            border-radius: 2.7vw;
+        }
         &--lupe {
-            content: "";
             display: inline-block;
             position: absolute;
-            background-image: url(/images/icon_lupe.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            // content: "";
+            // background-image: url(/images/icon_lupe.png);
+            // background-repeat: no-repeat;
+            // background-size: contain;
             top: 0;
             bottom: 0;
             left: 0.6vw;
@@ -47,11 +54,22 @@
             height: 1.25vw;
             @include media(iPad){
                 position: relative;
-                top: 0.8vw;
+                top: 1.8px;
                 left: -47vw;
                 margin: 0;
                 width: 2.9vw;
+                font-size: 2.9vw;
                 height: 2.9vw;
+                line-height: 2.9vw;
+            }
+            @include media(iPhone){
+                position: relative;
+                top: 0.3vw;
+                left: -58.5vw;
+                margin: 0;
+                width: 6.4vw;
+                height: 6.4vw;
+                font-size: 5vw;
             }
         }
     }
@@ -70,6 +88,12 @@
             width: 16vw;
             margin: 0 0 0 -3.6vw;
         }
+        @include media(iPhone){
+            height: 12.3vw;
+            width: 20.8vw;
+            margin: 0 0 0 -3.2vw;
+            border-radius: 2.7vw;
+        }
         &--text {
             display: inline-block;
             height: $searchHeight_PC;
@@ -77,7 +101,11 @@
             @include media(iPad){
                 line-height: 5.5vw;
                 height: 5.5vw;
-            }    
+            }
+            @include media(iPhone){
+                line-height: 12.3vw;
+                height: 12.3vw;
+            }
         }
     }
 }

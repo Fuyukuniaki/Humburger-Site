@@ -18,3 +18,17 @@
         }
     }
 }
+@include media(iPhone){
+    .c-size {
+        &__MainCard {
+            &--base {
+                width: 81vw;
+                height: 33vw;    
+            }
+            &--text {
+                height: 18.1vw;
+                width: 76vw;
+            }
+        }
+    }
+}

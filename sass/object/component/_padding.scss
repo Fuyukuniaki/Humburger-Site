@@ -9,11 +9,17 @@
         @include media(iPad){
             padding: 3vw 1.4vw 0 1.4vw;
         }
+        @include media(iPhone){
+            padding: 3vw 4vw 1.4vw 4vw;
+        }
         &--base {
             padding: 6.30vw 5.83vw 12.34vw 5.78vw;
         }
         &--text {
             padding: 1.09vw 1.15vw 1.09vw 1.042vw;
+            @include media(iPhone){
+                padding: 2.5vw 2.7vw;
+            }
         }
     }
     &__MainMap--textBase {
