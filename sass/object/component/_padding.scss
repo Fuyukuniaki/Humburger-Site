@@ -24,5 +24,8 @@
     }
     &__MainMap--textBase {
         padding: 4.84vw 7.45vw 3.80vw 5.99vw;
+        @include media(iPhone){
+            padding: 10vw 10vw 0 10vw;
+        }
     }
 }

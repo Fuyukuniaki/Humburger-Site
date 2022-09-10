@@ -211,6 +211,12 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 110vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-size__Footer {
+    width: 100vw;
+    height: 40vw;
+  }
+}
 
 .c-background {
   background-color: #FFFFFF;
@@ -352,8 +358,18 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-margin__Footer--link {
   margin: 2.3vw auto 0 auto;
 }
+@media only screen and (max-width:599px) {
+  .c-margin__Footer--link {
+    margin: 16vw auto 0 auto;
+  }
+}
 .c-margin__Footer--copyright {
   margin: 2vw auto 1.5vw auto;
+}
+@media only screen and (max-width:599px) {
+  .c-margin__Footer--copyright {
+    margin: 9vw auto 8vw auto;
+  }
 }
 
 .c-padding__AllZero {
@@ -385,6 +401,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 .c-padding__MainMap--textBase {
   padding: 4.84vw 7.45vw 3.8vw 5.99vw;
+}
+@media only screen and (max-width:599px) {
+  .c-padding__MainMap--textBase {
+    padding: 10vw 10vw 0 10vw;
+  }
 }
 
 .c-text-size {
@@ -479,12 +500,22 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     font-size: 3.6vw;
   }
 }
+@media only screen and (max-width:599px) {
+  .c-text-size__MainMap--title {
+    font-size: 8vw;
+  }
+}
 .c-text-size__MainMap--text {
   font-size: 0.83vw;
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainMap--text {
     font-size: 1.68vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-text-size__MainMap--text {
+    font-size: 3.73vw;
   }
 }
 .c-text-size__NavTitle {
@@ -514,8 +545,18 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-text-size__Footer--link {
   font-size: 1.04vw;
 }
+@media only screen and (max-width:599px) {
+  .c-text-size__Footer--link {
+    font-size: 5.3vw;
+  }
+}
 .c-text-size__Footer--copyright {
   font-size: 0.73vw;
+}
+@media only screen and (max-width:599px) {
+  .c-text-size__Footer--copyright {
+    font-size: 3.73vw;
+  }
 }
 
 .c-text-weight {
@@ -612,6 +653,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 9vw;
     height: 3.1vw;
     border-bottom: 0.24vw solid #FFFFFF;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-text-border__MainMap--title::after {
+    width: 20vw;
+    height: 4.8vw;
+    border-bottom: 0.53vw solid #FFFFFF;
   }
 }
 
@@ -948,7 +996,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 
 .p-footer {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
 }
 .p-footer__Link {
   display: flex;

@@ -65,11 +65,17 @@
         @include media(iPad){
             font-size: 3.6vw;
         }
+        @include media(iPhone){
+            font-size: 8vw;
+        }
     }
     &__MainMap--text {
         font-size: 0.83vw;
         @include media(iPad){
             font-size: 1.68vw;
+        }
+        @include media(iPhone){
+            font-size: 3.73vw;
         }
     }
     &__NavTitle {
@@ -92,9 +98,15 @@
     }
     &__Footer--link {
         font-size: 1.04vw;
+        @include media(iPhone){
+            font-size: 5.3vw;
+        }
     }
     &__Footer--copyright {
         font-size: 0.73vw;
+        @include media(iPhone){
+            font-size: 3.73vw;
+        }
     }
 }
 .c-text-weight {
@@ -189,6 +201,11 @@
                     width: 9vw;
                     height: 3.1vw;
                     border-bottom: 0.24vw solid $textColor_White;
+                }
+                @include media(iPhone){
+                    width: 20vw;
+                    height: 4.8vw;
+                    border-bottom: 0.53vw solid $textColor_White;
                 }
             }
         }

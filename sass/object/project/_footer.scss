@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 .p-footer {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     &__Link {
         display: flex;
         flex-flow: row nowrap;

@@ -72,8 +72,14 @@
     }
     &__Footer--link {
         margin: 2.3vw auto 0 auto;
+        @include media(iPhone){
+            margin: 16vw auto 0 auto;
+        }
     }
     &__Footer--copyright {
         margin: 2vw auto 1.5vw auto;
+        @include media(iPhone){
+            margin: 9vw auto 8vw auto;
+        }
     }
 }
