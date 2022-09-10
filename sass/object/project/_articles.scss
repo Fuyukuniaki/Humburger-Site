@@ -17,14 +17,14 @@
     }
     &__MainMap {
         @include media(PC){
-            width: 49.5vw;
-            height: 100%;
             display: block;
             aspect-ratio: 950 / 649;
         }
         @include media(iPad){
-            width: 100vw;
-            height: 100%;
+            display: block;
+            aspect-ratio: 1553/649;
+        }
+        @include media(iPhone){
             display: block;
             aspect-ratio: 1553/649;
         }

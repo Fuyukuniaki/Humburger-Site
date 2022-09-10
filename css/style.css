@@ -185,6 +185,33 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 76vw;
   }
 }
+@media only screen and (min-width:835px) {
+  .c-size__Map {
+    width: 100%;
+    height: auto;
+  }
+  .c-size__Map--text {
+    width: 49.5vw;
+    height: 100%;
+  }
+}
+@media only screen and (max-width:834px) {
+  .c-size__Map {
+    width: 100vw;
+    height: 100%;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-size__Map {
+    width: 100vw;
+    height: 184vw;
+  }
+  .c-size__Map--text {
+    width: 100vw;
+    height: 110vw;
+  }
+}
+
 .c-background {
   background-color: #FFFFFF;
 }
@@ -613,9 +640,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     overflow-x: hidden;
   }
 }
-@media only screen and (max-width:834px) {
+@media only screen and (max-width:599px) {
   .c-overflow__MainCard--text {
     overflow: hidden;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-overflow__Map--text {
+    overflow: visible;
   }
 }
 .c-overflow__NavMenu {
@@ -839,16 +871,18 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 @media only screen and (min-width:835px) {
   .p-articles__MainMap {
-    width: 49.5vw;
-    height: 100%;
     display: block;
     aspect-ratio: 950/649;
   }
 }
 @media only screen and (max-width:834px) {
   .p-articles__MainMap {
-    width: 100vw;
-    height: 100%;
+    display: block;
+    aspect-ratio: 1553/649;
+  }
+}
+@media only screen and (max-width:599px) {
+  .p-articles__MainMap {
     display: block;
     aspect-ratio: 1553/649;
   }
@@ -908,8 +942,6 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .p-section__MainMap {
-  width: 100%;
-  height: auto;
   display: block;
   aspect-ratio: 1553/649;
 }

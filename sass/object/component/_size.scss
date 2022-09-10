@@ -18,8 +18,8 @@
         }
     }
 }
-@include media(iPhone){
-    .c-size {
+.c-size {
+    @include media(iPhone){
         &__MainCard {
             &--base {
                 width: 81vw;
@@ -28,6 +28,28 @@
             &--text {
                 height: 18.1vw;
                 width: 76vw;
+            }
+        }
+    }
+    &__Map {
+        @include media(PC){
+            width: 100%;
+            height: auto;   
+            &--text {
+                width: 49.5vw;
+                height: 100%;
+            }     
+        }
+        @include media(iPad){
+            width: 100vw;
+            height: 100%;
+        }
+        @include media(iPhone){
+            width: 100vw;
+            height: 184vw;
+            &--text {
+                width: 100vw;
+                height: 110vw;
             }
         }
     }

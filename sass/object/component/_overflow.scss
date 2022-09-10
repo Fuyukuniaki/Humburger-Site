@@ -11,8 +11,15 @@
     }
     &__MainCard {
         &--text {
-            @include media(iPad){
+            @include media(iPhone){
                 overflow: hidden;
+            }
+        }
+    }
+    &__Map {
+        &--text {
+            @include media(iPhone){
+                overflow: visible;
             }
         }
     }
