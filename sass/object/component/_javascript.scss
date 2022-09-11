@@ -1,1 +1,8 @@
 @use "../../foundation/" as *;
+
+.active {
+    transition-duration: 1s;
+}
+.inactive {
+    transition-duration: 1s;
+}

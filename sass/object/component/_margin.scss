@@ -60,14 +60,23 @@
     }
     &__NavMenu {
         margin: 0 auto 2.39vw 2.4vw;
+        @include media(iPhone){
+            margin: 0 auto auto 12.5vw;
+        }
     }
     &__NavMenuSub {
         margin: 0 auto 3.1vw 0;
         &--title {
             margin: 0 auto 2.083vw 0;
+            @include media(iPhone){
+                margin: 9.1vw auto 10.6vw 0;
+            }
         }
         &--text {
             margin: 0 auto 1.6vw 0;
+            @include media(iPhone){
+                margin: 5.3vw auto 0 5.3vw;
+            }
         }
     }
     &__Footer--link {

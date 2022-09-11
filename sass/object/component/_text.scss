@@ -89,11 +89,17 @@
         @include media(iPad){
             font-size: 2.9vw;
         }
+        @include media(iPhone){
+            font-size: 6.4vw;
+        }
     }
     &__NavMenu--sub {
         font-size: 1.04vw;
         @include media(iPad){
             font-size: 2.4vw;
+        }
+        @include media(iPhone){
+            font-size: 5.3vw;
         }
     }
     &__Footer--link {

@@ -24,6 +24,12 @@
                 width: 3.8vw;
                 height: 0.5vw;
                 background-color: $textColor_Gray;
+                @include media(iPhone){
+                    top: 6.7vw;
+                    right: 4.5vw;
+                    width: 8.5vw;
+                    height: 1.6vw; 
+                }
             }
             &::before {
                 transform: rotate(-45deg);

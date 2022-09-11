@@ -10,14 +10,8 @@
         z-index: 1;
     }
     &__FrontPage {
-        &::before {
-            z-index: 0;
-        }
         &.inactive {
             z-index: 10;
-            &::before {
-                z-index: 1;
-            }
         }
     }
     &__NavMenu {

@@ -11,7 +11,7 @@
     @include media(iPad){
         display: flex;
         flex-flow: wrap;
-        height: 26vw;
+        height: $headerHeight_iPad;
         justify-content: space-between;
         align-items: center;
         width: 100vw;
@@ -19,7 +19,7 @@
     @include media(iPhone){
         display: flex;
         flex-flow: wrap;
-        height: 58.7vw;
+        height: $headerH_iPhone;
         justify-content: space-between;
         align-items: center;
         width: 100vw;

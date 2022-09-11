@@ -1,32 +1,22 @@
 @use "../../foundation/" as *;
 
 @include media(iPad){
-    .p-body__FrontPage {
-        &::before {
-            display: none;
-            content: "";
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100%;
-            background-color: $bgColor_NavBase;
-            transition: opacity 1s;
-        }
+    .p-body__Shade {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: $bgColor_NavBase;
+        z-index: 1;
+        transition: opacity 1s;
         &.inactive {
-            &::before {
-                display: block;
-                content: "";
-                opacity: 1;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100%;
-                background-color: $bgColor_NavBase;
-                transition: opacity 1s;
-            }
+            display: block;
+            opacity: 1;
+            z-index: 1;
         }
     }
 }

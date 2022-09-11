@@ -1,6 +1,19 @@
 @use "../../foundation/" as *;
 
 .p-nav {
+    @include media(PC){
+        &__NavMenu {
+            width: $navMenuWidth_PC;
+            height: 100%;
+            &--title {
+                width: $navMenuWidth_PC;
+            }
+            &--subMenu {
+                width: $navMenuWidth_PC;
+                max-height: 100%;
+            }
+        }
+    }
     @include media(iPad) {
         &__NavMenu {
             width: $navMenuWidth_iPad;
@@ -18,16 +31,20 @@
             }
         }
     }
-    @include media(PC){
+    @include media(iPhone){
         &__NavMenu {
-            width: $navMenuWidth_PC;
+            width: $navMenuW_iPhone;
             height: 100%;
+            &.active > &--title {
+                visibility: hidden;
+                width: $navMenuW_iPhone;
+            }
             &--title {
-                width: $navMenuWidth_PC;
+                width: $navMenuW_iPhone;
             }
             &--subMenu {
-                width: $navMenuWidth_PC;
-                max-height: 100%;
+                width: $navMenuW_iPhone;
+                min-height: 100%;
             }
         }
     }
