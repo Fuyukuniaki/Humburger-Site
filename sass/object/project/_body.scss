@@ -1,7 +1,7 @@
 @use "../../foundation/" as *;
 
-@include media(iPad){
-    .p-body__Shade {
+.p-body__Shade {
+    @include media(iPad){
         content: "";
         position: absolute;
         top: 0;
@@ -9,7 +9,25 @@
         display: none;
         opacity: 0;
         width: 100vw;
-        height: 100%;
+        height: 100vh;
+        background-color: $bgColor_NavBase;
+        z-index: 1;
+        transition: opacity 1s;
+        &.inactive {
+            display: block;
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+    @include media(iPhone){
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
         background-color: $bgColor_NavBase;
         z-index: 1;
         transition: opacity 1s;

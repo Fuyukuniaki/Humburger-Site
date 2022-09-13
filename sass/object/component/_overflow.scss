@@ -5,9 +5,6 @@
         &--navMenu {
             overflow: hidden;
         }
-        @include media(iPad){
-            overflow-x: hidden;
-        }
     }
     &__MainCard {
         &--text {

@@ -14,7 +14,31 @@
             left: 100%;
             right: $navMenuWidth_iPad * -1;
             &.active {
-                position: absolute;
+                overscroll-behavior: contain;
+                position: fixed;
+                top: 0;
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+}
+@include media (iPhone) {
+    .c-position {
+        &__FrontPage {
+            position: relative;
+            &.inactive {
+                position: fixed;
+            }
+        }
+        &__NavMenu {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            right: $navMenuW_iPhone * -1;
+            &.active {
+                overscroll-behavior: contain;
+                position: fixed;
                 top: 0;
                 left: auto;
                 right: 0;

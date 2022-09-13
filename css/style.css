@@ -156,7 +156,29 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     right: -44vw;
   }
   .c-position__NavMenu.active {
-    position: absolute;
+    overscroll-behavior: contain;
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-position__FrontPage {
+    position: relative;
+  }
+  .c-position__FrontPage.inactive {
+    position: fixed;
+  }
+  .c-position__NavMenu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: -87.5vw;
+  }
+  .c-position__NavMenu.active {
+    overscroll-behavior: contain;
+    position: fixed;
     top: 0;
     left: auto;
     right: 0;
@@ -708,11 +730,6 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-overflow__FrontPage--navMenu {
   overflow: hidden;
 }
-@media only screen and (max-width:834px) {
-  .c-overflow__FrontPage {
-    overflow-x: hidden;
-  }
-}
 @media only screen and (max-width:599px) {
   .c-overflow__MainCard--text {
     overflow: hidden;
@@ -924,9 +941,10 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     display: none;
     opacity: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5019607843);
     z-index: 1;
+    transition: opacity 1s;
   }
   .p-body__Shade.inactive {
     display: block;
@@ -934,6 +952,27 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     z-index: 1;
   }
 }
+@media only screen and (max-width:599px) {
+  .p-body__Shade {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    z-index: 1;
+    transition: opacity 1s;
+  }
+  .p-body__Shade.inactive {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
 .p-articles__MainCard {
   width: 33vw;
   display: flex;
@@ -1068,21 +1107,26 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   z-index: 10000;
   font-size: 0;
 }
-.p-button__clickable.clicked::before, .p-button__clickable.clicked::after {
-  content: "";
-  position: absolute;
-  top: 1.9vw;
-  right: 2.8vw;
-  width: 3.8vw;
-  height: 0.5vw;
-  background-color: #707070;
+@media only screen and (max-width:834px) {
+  .p-button__clickable.clicked::before, .p-button__clickable.clicked::after {
+    content: "";
+    position: absolute;
+    top: 1.9vw;
+    right: 2.8vw;
+    width: 3.8vw;
+    height: 0.5vw;
+    background-color: #707070;
+  }
 }
 @media only screen and (max-width:599px) {
   .p-button__clickable.clicked::before, .p-button__clickable.clicked::after {
+    content: "";
+    position: absolute;
     top: 6.7vw;
     right: 4.5vw;
     width: 8.5vw;
     height: 1.6vw;
+    background-color: #707070;
   }
 }
 .p-button__clickable.clicked::before {

@@ -17,18 +17,23 @@
             z-index: 10000;
             font-size: 0;
             &::before, &::after {
-                content: "";
-                position: absolute;
-                top: 1.9vw;
-                right: 2.8vw;
-                width: 3.8vw;
-                height: 0.5vw;
-                background-color: $textColor_Gray;
-                @include media(iPhone){
+                @include media(iPad){
+                    content: "";
+                    position: absolute;
+                    top: 1.9vw;
+                    right: 2.8vw;
+                    width: 3.8vw;
+                    height: 0.5vw;
+                    background-color: $textColor_Gray;
+                }
+            @include media(iPhone){
+                    content: "";
+                    position: absolute;
                     top: 6.7vw;
                     right: 4.5vw;
                     width: 8.5vw;
-                    height: 1.6vw; 
+                    height: 1.6vw;
+                    background-color: $textColor_Gray;
                 }
             }
             &::before {
