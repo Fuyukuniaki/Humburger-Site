@@ -10,14 +10,19 @@
         @include media(iPhone){
             font-size: 5.5vw;
         }
+        &:hover {
+            cursor: pointer;
+        }
         &.clicked {
             position: absolute;
             top: 2.8vw;
             right: 2.8vw;
             z-index: 10000;
             font-size: 0;
+            width: 8.5vw;
+            height: 8.5vw;
             &::before, &::after {
-                @include media(iPad){
+            @include media(iPad){
                     content: "";
                     position: absolute;
                     top: 1.9vw;
@@ -41,6 +46,9 @@
             }
             &::after {
                 transform: rotate(45deg);
+            }
+            &:hover {
+                cursor: pointer;
             }
         }
     }
