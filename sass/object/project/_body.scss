@@ -12,11 +12,12 @@
         height: 100vh;
         background-color: $bgColor_NavBase;
         z-index: 1;
-        transition: opacity 1s;
+        transition: opacity 1000ms;
         &.inactive {
             display: block;
             opacity: 1;
             z-index: 1;
+            transition: opacity 1000ms;
         }
     }
     @include media(iPhone){

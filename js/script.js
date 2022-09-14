@@ -1,5 +1,18 @@
 
 //-------------------------------------------------------------------------
+function navActive(){
+    $(function () {
+        $("nav").addClass('active');
+        $(".js-shade").addClass('inactive');
+    });
+};
+function navInactive(){
+    $(function () {
+        $("nav").removeClass('active');
+        $(".js-shade").removeClass('inactive');
+    });
+};
+
 function menu_slide(){
     if($('.js-button__clickable').length > 0 ||
        $('.js-button__clickable').hasClass('clicked') ||
@@ -7,8 +20,6 @@ function menu_slide(){
             $('.js-button__clickable').remove();
             $('.js-shade').removeClass('inactive').remove();
             $('.js-body').removeClass('inactive');
-            $('nav').css('right','-100%').removeClass('active');
-            $('.js-shade').css('opacity','0');
             $('.js-button__clickable').removeClass('clicked');
     }
     if(window.matchMedia("(max-width: 834px)").matches){
@@ -18,23 +29,11 @@ function menu_slide(){
         $('.js-button__clickable').each(function(){
             $(this).on('click', function(){
                 if($(this).hasClass('clicked')){
-                    $('.js-body').removeClass('inactive');
-                    $('.js-shade').animate(
-                        { opacity: 0 }, 500,
-                        function(){$(this).removeClass('inactive');}
-                    );
-                    $('nav').animate(
-                        { right: '-100%' }, 500,
-                        function(){ $(this).removeClass('active');}
-                    );
+                    $.when($('body').removeClass('inactive'))
+                     .done(navInactive());
                 } else {
-                    $('.js-body').addClass('inactive');
-                    $('.js-shade').addClass('inactive').animate(
-                        { opacity: 1 }, 500
-                    );
-                    $('nav').addClass('active').animate(
-                        { right: 0 }, 500
-                    );
+                    $.when($('body').addClass('inactive'))
+                     .done(navActive());
                 }
                 $(this).toggleClass('clicked');
             });
