@@ -28,8 +28,8 @@ function menu_slide(){
         $('.js-button__clickable').each(function(){
             $(this).on('click', function(){
                 if($(this).hasClass('clicked')){
-                    $.when($('body').removeClass('inactive'))
-                     .done(navInactive());
+                    $.when(navInactive())
+                     .done($('body').removeClass('inactive'));
                 } else {
                     $.when($('body').addClass('inactive'))
                      .done(navActive());

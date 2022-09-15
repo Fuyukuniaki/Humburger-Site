@@ -7,8 +7,13 @@
         font-size: 4.1vw;
         right: 2.9vw;
         color: $textColor_Gray;
+        @include media(iPad){
+            font-size: 4.1vw;
+            transition: 100ms;
+        }
         @include media(iPhone){
             font-size: 5.5vw;
+            transition: 100ms;
         }
         &:hover {
             cursor: pointer;
@@ -22,7 +27,7 @@
             width: 8.5vw;
             height: 8.5vw;
             &::before, &::after {
-            @include media(iPad){
+                @include media(iPad){
                     content: "";
                     position: absolute;
                     top: 1.9vw;
@@ -31,7 +36,7 @@
                     height: 0.5vw;
                     background-color: $textColor_Gray;
                 }
-            @include media(iPhone){
+                @include media(iPhone){
                     content: "";
                     position: absolute;
                     top: 6.7vw;

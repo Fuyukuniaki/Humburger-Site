@@ -1078,9 +1078,16 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   right: 2.9vw;
   color: #707070;
 }
+@media only screen and (max-width:834px) {
+  .p-button__clickable {
+    font-size: 4.1vw;
+    transition: 100ms;
+  }
+}
 @media only screen and (max-width:599px) {
   .p-button__clickable {
     font-size: 5.5vw;
+    transition: 100ms;
   }
 }
 .p-button__clickable:hover {
