@@ -14,9 +14,8 @@ function navInactive(){
 };
 
 function menu_slide(){
-    if($('.js-button__clickable').length > 0 ||
-       $('.js-button__clickable').hasClass('clicked') ||
-       $('nav').attr('right','0')){
+    if( $('.js-button__clickable').length > 0 ||
+       $('.js-button__clickable').hasClass('clicked') ){
             $('.js-button__clickable').remove();
             $('.js-shade').removeClass('inactive').remove();
             $('.js-body').removeClass('inactive');

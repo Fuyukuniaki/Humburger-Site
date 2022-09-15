@@ -10,6 +10,7 @@
         z-index: 1;
     }
     &__FrontPage {
+        z-index: 0;
         &.inactive {
             z-index: 10;
         }
