@@ -13,6 +13,7 @@ function menu_slide(){
             $('.js-button__clickable').remove();
             $('.js-shade').removeClass('inactive').remove();
             $('.js-body').removeClass('inactive');
+            $('nav').removeClass('active');
             $('.js-button__clickable').removeClass('clicked');
     }
     if(window.matchMedia("(max-width: 834px)").matches){

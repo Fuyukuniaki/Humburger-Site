@@ -709,6 +709,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   text-decoration: none;
 }
 
+.c-overflow__FrontPage {
+  overflow-x: hidden;
+}
 .c-overflow__FrontPage--navMenu {
   overflow: hidden;
 }

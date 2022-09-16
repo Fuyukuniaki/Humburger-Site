@@ -2,6 +2,7 @@
 
 .c-overflow {
     &__FrontPage {
+        overflow-x: hidden;
         &--navMenu {
             overflow: hidden;
         }
