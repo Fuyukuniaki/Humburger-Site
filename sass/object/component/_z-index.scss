@@ -11,9 +11,9 @@
     }
     &__FrontPage {
         z-index: 0;
-        &.inactive {
-            z-index: 10;
-        }
+        // &.inactive {
+        //     z-index: 10;
+        // }
     }
     &__NavMenu {
         z-index: 0;

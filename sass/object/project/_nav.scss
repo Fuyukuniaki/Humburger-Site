@@ -18,11 +18,8 @@
         &__NavMenu {
             width: $navMenuWidth_iPad;
             height: 100%;
-            &.active > &--title {
-                visibility: hidden;
-                width: $navMenuWidth_iPad;
-            }
             &--title {
+                visibility: hidden;
                 width: $navMenuWidth_iPad;
             }
             &--subMenu {
@@ -35,11 +32,8 @@
         &__NavMenu {
             width: $navMenuW_iPhone;
             height: 100%;
-            &.active > &--title {
-                visibility: hidden;
-                width: $navMenuW_iPhone;
-            }
             &--title {
+                visibility: hidden;
                 width: $navMenuW_iPhone;
             }
             &--subMenu {

@@ -2,14 +2,8 @@
 //-------------------------------------------------------------------------
 function navActive(){
     $(function () {
-        $("nav").addClass('active');
-        $(".js-shade").addClass('inactive');
-    });
-};
-function navInactive(){
-    $(function () {
-        $("nav").removeClass('active');
-        $(".js-shade").removeClass('inactive');
+        $("nav").toggleClass('active');
+        $(".js-shade").toggleClass('inactive');
     });
 };
 
@@ -27,13 +21,8 @@ function menu_slide(){
 
         $('.js-button__clickable').each(function(){
             $(this).on('click', function(){
-                if($(this).hasClass('clicked')){
-                    $.when(navInactive())
-                     .done($('body').removeClass('inactive'));
-                } else {
-                    $.when($('body').addClass('inactive'))
-                     .done(navActive());
-                }
+                $.when($('body').toggleClass('inactive'))
+                 .done(navActive());
                 $(this).toggleClass('clicked');
             });
         });

@@ -81,9 +81,6 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-z-index__FrontPage {
   z-index: 0;
 }
-.c-z-index__FrontPage.inactive {
-  z-index: 10;
-}
 .c-z-index__NavMenu {
   z-index: 0;
 }
@@ -887,11 +884,8 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 44vw;
     height: 100%;
   }
-  .p-nav__NavMenu.active > .p-nav__NavMenu--title {
-    visibility: hidden;
-    width: 44vw;
-  }
   .p-nav__NavMenu--title {
+    visibility: hidden;
     width: 44vw;
   }
   .p-nav__NavMenu--subMenu {
@@ -904,11 +898,8 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 87.5vw;
     height: 100%;
   }
-  .p-nav__NavMenu.active > .p-nav__NavMenu--title {
-    visibility: hidden;
-    width: 87.5vw;
-  }
   .p-nav__NavMenu--title {
+    visibility: hidden;
     width: 87.5vw;
   }
   .p-nav__NavMenu--subMenu {
@@ -929,11 +920,12 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5019607843);
     z-index: 0;
-    transition: 1000ms;
+    transition: opacity 900ms 100ms, z-index 100ms 900ms;
   }
   .p-body__Shade.inactive {
-    opacity: 1;
     z-index: 1;
+    opacity: 1;
+    transition: opacity 900ms 100ms, z-index 100ms;
   }
 }
 @media only screen and (max-width:599px) {
@@ -947,12 +939,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5019607843);
-    z-index: 0;
-    transition: 1000ms;
+    z-index: 1;
+    transition: opacity 900ms 100ms, z-index 100ms 900ms;
   }
   .p-body__Shade.inactive {
-    opacity: 1;
     z-index: 1;
+    opacity: 1;
+    transition: opacity 900ms 100ms, z-index 100ms;
   }
 }
 
@@ -1076,18 +1069,19 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   top: 3.6vw;
   font-size: 4.1vw;
   right: 2.9vw;
+  z-index: 10000;
   color: #707070;
+  transition: 10ms;
+  transition-delay: 990ms;
 }
 @media only screen and (max-width:834px) {
   .p-button__clickable {
     font-size: 4.1vw;
-    transition: 100ms;
   }
 }
 @media only screen and (max-width:599px) {
   .p-button__clickable {
     font-size: 5.5vw;
-    transition: 100ms;
   }
 }
 .p-button__clickable:hover {
@@ -1095,12 +1089,25 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 .p-button__clickable.clicked {
   position: absolute;
-  top: 2.8vw;
-  right: 2.8vw;
+  top: 3.6vw;
+  font-size: 4.1vw;
+  right: 2.9vw;
   z-index: 10000;
-  font-size: 0;
-  width: 8.5vw;
-  height: 8.5vw;
+  color: transparent;
+  transition: 10ms;
+}
+@media only screen and (max-width:834px) {
+  .p-button__clickable.clicked {
+    font-size: 4.1vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .p-button__clickable.clicked {
+    font-size: 5.5vw;
+  }
+}
+.p-button__clickable.clicked::before, .p-button__clickable.clicked::after {
+  z-index: 10000;
 }
 @media only screen and (max-width:834px) {
   .p-button__clickable.clicked::before, .p-button__clickable.clicked::after {
