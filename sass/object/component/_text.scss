@@ -33,6 +33,13 @@
             font-size: 9.6vw;
         }
     }
+    &__MainArchive {
+        &--mainTitle {
+            &--text {
+                font-size: 0.83vw;
+            }
+        }
+    }
     &__MainCard--title {
         font-size: 4.17vw;
         @include media(iPad){
@@ -76,6 +83,26 @@
         }
         @include media(iPhone){
             font-size: 3.73vw;
+        }
+    }
+    &__MainArchive--mainTitle {
+        font-size: 3.125vw;
+    }
+    &__MainArchive--text {
+        font-size: 0.83vw;
+    }
+    &__ArchiveText {
+        &--title {
+            font-size: 1.875vw;
+        }
+        &--text {
+            font-size: 0.83vw;
+        }
+    }
+    &__Pagination {
+        font-size: 0.83vw;
+        &--prev, &--next {
+            font-size: 0.83vw;
         }
     }
     &__NavTitle {
@@ -157,6 +184,19 @@
     &__MainMap--text {
         color: $textColor_White;
     }
+    &__ArchiveText {
+        color: $textColor_Brown;
+    }
+    &__Pagination {
+        color: $textColor_Gray;
+        & > .active {
+            color: $textColor_White;
+        }
+        &--prev, &--next {
+            color: transparent;
+        }
+
+    }
     &__NavTitle {
         color: $textColor_Gray;
     }
@@ -221,10 +261,18 @@
     &__MainMap--text {
         line-height: 2em;
     }
+    &__MainArchive--mainTitle--text {
+        line-height: normal;
+        vertical-align: middle;
+    }
 }
 .c-text-indent {
     &--subMenu {
         text-indent: 0.83vw;
+    }
+    &__MainArchive--mainTitle--text {
+        text-indent: 1.04vw;
+        display: inline-block;
     }
 }
 .c-text-separate {

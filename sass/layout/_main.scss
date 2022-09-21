@@ -9,4 +9,9 @@
     @include media(iPad){
         width: 100vw;
     }
+    &__archive {
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
 }

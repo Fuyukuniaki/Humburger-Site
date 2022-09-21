@@ -1,5 +1,15 @@
-ul, ol, dl, li, dt, dd {
+ul, ol, dl, li, dt, dd, figure {
   list-style: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :target {
@@ -56,6 +66,11 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .l-main {
     width: 100vw;
   }
+}
+.l-main__archive {
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
 }
 
 .l-footer {
@@ -215,6 +230,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 110vw;
   }
 }
+.c-size__Pagination--prev, .c-size__Pagination--next {
+  width: 0.93vw;
+  height: 0.88vw;
+}
+.c-size__Pagination--number {
+  width: 1.82vw;
+  height: 1.82vw;
+}
 @media only screen and (max-width:599px) {
   .c-size__Footer {
     width: 100vw;
@@ -245,6 +268,13 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     background-position: bottom right;
   }
 }
+.c-background__MainArchive--title {
+  background-image: url(/images/page-title_arcive.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+}
 .c-background__MainCard--takeout {
   background: url(/images/bg_takeout.png);
   background-size: cover;
@@ -264,10 +294,78 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-background__Map--img {
   background: center/cover no-repeat url(/images/map.png), #000000;
 }
+.c-background__Pagination--prev {
+  background-image: url(/images/ico_prev.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.c-background__Pagination--number {
+  background-color: #FFFFFF;
+  border: 1px solid #707070;
+}
+.c-background__Pagination--number.active {
+  background-color: #3C2B1C;
+}
+.c-background__Pagination--next {
+  background-image: url(/images/ico_next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .c-background--Footer {
   background-color: #9D8670;
 }
 
+@media only screen and (min-width:835px) {
+  .c-mainlist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row;
+    margin: 0 auto 1.5625vw auto;
+  }
+  .c-mainlist__Image {
+    width: 35.26vw;
+    height: auto;
+    aspect-ratio: 677/471;
+  }
+  .c-mainlist__Text {
+    width: 35.3vw;
+    min-height: 100%;
+    background: #3C2B1C;
+    padding: 2.8vw 5.4vw 0 3.3vw;
+  }
+  .c-mainlist__Text--title {
+    display: block;
+    font-size: 1.875vw;
+    color: #FFFFFF;
+    padding: 0 0 2.4vw 0;
+  }
+  .c-mainlist__Text--subTitle {
+    display: block;
+    font-size: 1.25vw;
+    color: #FFFFFF;
+    padding: 0 0 0.89vw 0;
+  }
+  .c-mainlist__Text--text {
+    display: inline-block;
+    font-size: 0.83vw;
+    color: #FFFFFF;
+    width: 26.5vw;
+    height: 2.9vw;
+    overflow-x: auto;
+  }
+  .c-mainlist__Text--button {
+    display: block;
+    width: 15.2vw;
+    height: 3.96vw;
+    margin: 3.125vw 3.91vw 3.125vw 7.4vw;
+    background: #FFFFFF;
+    font-size: 0.83vw;
+    border: none;
+    border-radius: 3.96vw;
+    color: #707070;
+  }
+}
 .c-color {
   color: #707070;
 }
@@ -343,6 +441,30 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 .c-margin__MainMap--border {
   margin: 3.8vw auto 3.3vw 0;
+}
+.c-margin__MainArchive {
+  margin: 0 auto 3.65vw auto;
+}
+.c-margin__MainArchive--mainTitle {
+  margin: auto auto auto 4.48vw;
+}
+.c-margin__ArchiveText {
+  margin: 3.125vw auto 3.3vw auto;
+}
+.c-margin__ArchiveText--title {
+  margin: 0 0 1.3vw 0;
+}
+.c-margin__ArchiveText--text {
+  margin: auto;
+}
+.c-margin__Pagination--fraction {
+  margin: 0 0.78125vw 0 0;
+}
+.c-margin__Pagination--prev, .c-margin__Pagination--next {
+  margin: 0 0.78125vw 0 0;
+}
+.c-margin__Pagination--number {
+  margin: 0 0.78125vw 0 0;
 }
 .c-margin__NavTitle {
   margin: 4.89vw auto 5.15vw 2.5vw;
@@ -472,6 +594,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     font-size: 9.6vw;
   }
 }
+.c-text-size__MainArchive--mainTitle--text {
+  font-size: 0.83vw;
+}
 .c-text-size__MainCard--title {
   font-size: 4.17vw;
 }
@@ -536,6 +661,24 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .c-text-size__MainMap--text {
     font-size: 3.73vw;
   }
+}
+.c-text-size__MainArchive--mainTitle {
+  font-size: 3.125vw;
+}
+.c-text-size__MainArchive--text {
+  font-size: 0.83vw;
+}
+.c-text-size__ArchiveText--title {
+  font-size: 1.875vw;
+}
+.c-text-size__ArchiveText--text {
+  font-size: 0.83vw;
+}
+.c-text-size__Pagination {
+  font-size: 0.83vw;
+}
+.c-text-size__Pagination--prev, .c-text-size__Pagination--next {
+  font-size: 0.83vw;
 }
 .c-text-size__NavTitle {
   font-size: 1.77vw;
@@ -629,6 +772,18 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-text-color__MainMap--text {
   color: #FFFFFF;
 }
+.c-text-color__ArchiveText {
+  color: #3C2A10;
+}
+.c-text-color__Pagination {
+  color: #707070;
+}
+.c-text-color__Pagination > .active {
+  color: #FFFFFF;
+}
+.c-text-color__Pagination--prev, .c-text-color__Pagination--next {
+  color: transparent;
+}
 .c-text-color__NavTitle {
   color: #707070;
 }
@@ -695,9 +850,17 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-text-line-height__MainMap--text {
   line-height: 2em;
 }
+.c-text-line-height__MainArchive--mainTitle--text {
+  line-height: normal;
+  vertical-align: middle;
+}
 
 .c-text-indent--subMenu {
   text-indent: 0.83vw;
+}
+.c-text-indent__MainArchive--mainTitle--text {
+  text-indent: 1.04vw;
+  display: inline-block;
 }
 
 .c-text-separate__Footer--list::after {
@@ -801,6 +964,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   margin: auto 0;
   width: 1.25vw;
   height: 1.25vw;
+  line-height: 1.25vw;
 }
 @media only screen and (max-width:834px) {
   .p-search__Window--lupe {
@@ -822,6 +986,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     margin: 0;
     width: 6.4vw;
     height: 6.4vw;
+    line-height: 6.4vw;
     font-size: 5vw;
   }
 }
@@ -922,7 +1087,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5019607843);
-    z-index: 0;
+    z-index: -1;
     transition: opacity 900ms 100ms, z-index 100ms 900ms;
   }
   .p-body__Shade.inactive {
@@ -942,7 +1107,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5019607843);
-    z-index: 1;
+    z-index: -1;
     transition: opacity 900ms 100ms, z-index 100ms 900ms;
   }
   .p-body__Shade.inactive {
@@ -987,6 +1152,17 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     display: block;
     aspect-ratio: 1553/649;
   }
+}
+.p-articles__ArchiveText {
+  display: block;
+  width: 70.5vw;
+}
+.p-articles__MainList {
+  width: 70.5vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row;
 }
 
 @media only screen and (min-width:835px) {
@@ -1045,6 +1221,41 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .p-section__MainMap {
   display: block;
   aspect-ratio: 1553/649;
+}
+.p-section__MainArchive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 81vw;
+  height: auto;
+}
+.p-section__MainArchive--title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 12.45vw;
+}
+.p-section__ArchiveText {
+  width: 81vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.p-section__Archive-list--list {
+  width: 70.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.p-section__Archive-list--pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  margin: 7.8125vw auto 3.3vw auto;
 }
 
 .p-footer {

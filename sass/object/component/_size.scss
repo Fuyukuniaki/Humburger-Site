@@ -41,6 +41,14 @@
             }
         }
     }
+    &__Pagination--prev, &__Pagination--next {
+        width: 0.93vw;
+        height: 0.88vw;
+    }
+    &__Pagination--number {
+        width: 1.82vw;
+        height: 1.82vw;
+    }
     @include media(iPhone){
         &__Footer{
             width: 100vw;

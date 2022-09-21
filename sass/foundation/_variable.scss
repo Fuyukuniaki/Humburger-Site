@@ -22,12 +22,15 @@ $bgColor_CardBase : #FFFDFA;
 $bgColor_CardText : #FFFFFFCC;
 $bgColor_MapText  : #0000004a;
 $bgColor_MapImg   : #000000;
+$bgColor_Archive  : #3C2B1C;
 $bgColor_Footer   : #9D8670;
 
 $imgOpacity_Map   : 0.6;
 
 $navMenuWidth_PC  : 19vw;
-$headerWidth_PC   : 100vw - $navMenuWidth_PC ;
+$headerWidth_PC   : 100vw - $navMenuWidth_PC;
+
+$mainArchiveW_PC  : 70.5vw;
 
 $headerHeight_PC  : 11.3vw;
 $searchHeight_PC  : 2.4vw;

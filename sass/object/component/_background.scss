@@ -3,8 +3,6 @@
 
 .c-background {
     background-color: $textColor_White;
-    &__FrontPage-main{
-    }
     &__Header   {
         background-color: $bgColor_Header;
     }
@@ -22,6 +20,14 @@
             background-image: -webkit-image-set(url(/images/mainvisual-sp.jpg) 1x, url(/images/mainvisual-sp@2x.jpg) 2x);
             background-position: bottom right;
         }
+    }
+    &__MainArchive--title {
+        background-image: url(/images/page-title_arcive.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000;
+        // background-blend-mode: darken;
     }
     &__MainCard {
         &--takeout {
@@ -45,6 +51,26 @@
         &--img   {
             background: center / cover no-repeat url(/images/map.png), $bgColor_MapImg;
         }
+    }
+    &__Pagination{
+        &--prev {
+            background-image: url(/images/ico_prev.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &--number {
+            background-color: $textColor_White;
+            border: 1px solid $textColor_Gray;
+            &.active {
+                background-color: $bgColor_Archive;
+            }
+        }
+        &--next {
+            background-image: url(/images/ico_next.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
     }
     &--Footer   {
         background-color: $bgColor_Footer;

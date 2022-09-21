@@ -55,6 +55,32 @@
     &__MainMap--border {
         margin: 3.8vw auto 3.3vw 0;
     }
+    &__MainArchive {
+        margin: 0 auto 3.65vw auto;
+        &--mainTitle {
+            margin: auto auto auto 4.48vw;
+        }
+    }
+    &__ArchiveText {
+        margin: 3.125vw auto 3.3vw auto;
+        &--title {
+            margin: 0 0 1.3vw 0;
+        }
+        &--text {
+            margin: auto;
+        }
+    }
+    &__Pagination{
+        &--fraction {
+            margin: 0 0.78125vw 0 0;
+        }
+        &--prev, &--next {
+            margin: 0 0.78125vw 0 0;
+        }
+        &--number {
+            margin: 0 0.78125vw 0 0;
+        }
+    }
     &__NavTitle {
         margin: 4.89vw auto 5.15vw 2.5vw;
     }

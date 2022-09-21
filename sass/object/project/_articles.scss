@@ -29,4 +29,15 @@
             aspect-ratio: 1553/649;
         }
     }
+    &__ArchiveText {
+        display: block;
+        width: $mainArchiveW_PC;
+    }
+    &__MainList {
+        width: $mainArchiveW_PC;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row;
+    }
 }
