@@ -361,7 +361,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
   .c-mainlist__Text--text {
     display: inline-block;
-    font-size: 0.8333333333vw;
+    font-size: clamp(16px, 0.83vw, 0.83vw);
     color: #FFFFFF;
     width: 26.5vw;
     min-height: 2.9vw;
@@ -372,7 +372,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 3.96vw;
     margin: 3.125vw 3.91vw 3.125vw 7.4vw;
     background: #FFFFFF;
-    font-size: 0.8333333333vw;
+    font-size: clamp(16px, 0.83vw, 0.83vw);
     border: none;
     border-radius: 3.96vw;
     color: #707070;
@@ -562,7 +562,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 
 .c-text-size {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-size__Logo {
   font-size: 3.3vw;
@@ -581,7 +581,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-size: 1.25vw;
 }
 .c-text-size__Search--button {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 @media only screen and (max-width:834px) {
   .c-text-size__Search--button {
@@ -607,7 +607,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-text-size__MainArchive--mainTitle--text {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-size__MainCard--title {
   font-size: 4.17vw;
@@ -636,7 +636,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-text-size__MainCard--text {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainCard--text {
@@ -662,7 +662,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-text-size__MainMap--text {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainMap--text {
@@ -678,19 +678,19 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-size: 3.125vw;
 }
 .c-text-size__MainArchive--text {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-size__ArchiveText--title {
   font-size: 1.875vw;
 }
 .c-text-size__ArchiveText--text {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-size__Pagination {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-size__Pagination--prev, .c-text-size__Pagination--next {
-  font-size: 0.8333333333vw;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-size__NavTitle {
   font-size: 1.77vw;
@@ -868,7 +868,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 
 .c-text-indent--subMenu {
-  text-indent: 0.8333333333vw;
+  text-indent: clamp(16px, 0.83vw, 0.83vw);
 }
 .c-text-indent__MainArchive--mainTitle--text {
   text-indent: 1.04vw;
