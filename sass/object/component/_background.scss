@@ -22,13 +22,14 @@
         }
     }
     &__MainArchive--title {
-        background-image: url(/images/page-title_arcive.png);
+        background-image: url(/images/page-title_archive.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-color: #000;
         // background-blend-mode: darken;
     }
+    
     &__MainCard {
         &--takeout {
             background: url(/images/bg_takeout.png);

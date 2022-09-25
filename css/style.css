@@ -272,7 +272,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-background__MainArchive--title {
-  background-image: url(/images/page-title_arcive.png);
+  background-image: url(/images/page-title_archive.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
