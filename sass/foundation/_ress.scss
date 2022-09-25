@@ -6,6 +6,8 @@ ul, ol, dl, li, dt, dd, figure {
     margin-inline-start: 0;
     margin-inline-end: 0;
     padding-inline-start: 0;
+    text-align: left;
+    line-height: inherit;
 }
 a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :target {
     color: inherit;

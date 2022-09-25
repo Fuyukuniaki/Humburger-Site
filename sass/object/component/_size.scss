@@ -48,6 +48,7 @@
     &__Pagination--number {
         width: 1.82vw;
         height: 1.82vw;
+        line-height: 1.82vw;
     }
     @include media(iPhone){
         &__Footer{

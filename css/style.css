@@ -10,6 +10,8 @@ ul, ol, dl, li, dt, dd, figure {
           margin-inline-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  text-align: left;
+  line-height: inherit;
 }
 
 a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :target {
@@ -237,6 +239,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-size__Pagination--number {
   width: 1.82vw;
   height: 1.82vw;
+  line-height: 1.82vw;
 }
 @media only screen and (max-width:599px) {
   .c-size__Footer {
@@ -318,14 +321,24 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 @media only screen and (min-width:835px) {
   .c-mainlist {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
     flex-flow: row;
     margin: 0 auto 1.5625vw auto;
   }
   .c-mainlist__Image {
-    width: 35.26vw;
+    min-width: 35.26vw;
+    overflow: hidden;
     height: auto;
+  }
+  .c-mainlist__Image--wrap {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 677/471;
+  }
+  .c-mainlist__Image--image {
+    height: 100%;
+    width: auto;
     aspect-ratio: 677/471;
   }
   .c-mainlist__Text {
@@ -348,11 +361,10 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
   .c-mainlist__Text--text {
     display: inline-block;
-    font-size: 0.83vw;
+    font-size: 0.8333333333vw;
     color: #FFFFFF;
     width: 26.5vw;
-    height: 2.9vw;
-    overflow-x: auto;
+    min-height: 2.9vw;
   }
   .c-mainlist__Text--button {
     display: block;
@@ -360,7 +372,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     height: 3.96vw;
     margin: 3.125vw 3.91vw 3.125vw 7.4vw;
     background: #FFFFFF;
-    font-size: 0.83vw;
+    font-size: 0.8333333333vw;
     border: none;
     border-radius: 3.96vw;
     color: #707070;
@@ -550,7 +562,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 
 .c-text-size {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 .c-text-size__Logo {
   font-size: 3.3vw;
@@ -569,7 +581,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-size: 1.25vw;
 }
 .c-text-size__Search--button {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 @media only screen and (max-width:834px) {
   .c-text-size__Search--button {
@@ -595,7 +607,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-text-size__MainArchive--mainTitle--text {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 .c-text-size__MainCard--title {
   font-size: 4.17vw;
@@ -624,7 +636,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-text-size__MainCard--text {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainCard--text {
@@ -650,7 +662,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   }
 }
 .c-text-size__MainMap--text {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 @media only screen and (max-width:834px) {
   .c-text-size__MainMap--text {
@@ -666,19 +678,19 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-size: 3.125vw;
 }
 .c-text-size__MainArchive--text {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 .c-text-size__ArchiveText--title {
   font-size: 1.875vw;
 }
 .c-text-size__ArchiveText--text {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 .c-text-size__Pagination {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 .c-text-size__Pagination--prev, .c-text-size__Pagination--next {
-  font-size: 0.83vw;
+  font-size: 0.8333333333vw;
 }
 .c-text-size__NavTitle {
   font-size: 1.77vw;
@@ -856,7 +868,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 
 .c-text-indent--subMenu {
-  text-indent: 0.83vw;
+  text-indent: 0.8333333333vw;
 }
 .c-text-indent__MainArchive--mainTitle--text {
   text-indent: 1.04vw;
