@@ -32,6 +32,9 @@
     &__ArchiveText {
         display: block;
         width: $mainArchiveW_PC;
+        @include media(iPad){
+            width: $mainArchiveW_iPad;
+        }
     }
     &__MainList {
         width: $mainArchiveW_PC;
@@ -39,5 +42,8 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-flow: row;
+        @include media(iPad){
+            width: $mainArchiveW_iPad;
+        }
     }
 }

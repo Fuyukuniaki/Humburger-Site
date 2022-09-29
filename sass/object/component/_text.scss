@@ -87,16 +87,31 @@
     }
     &__MainArchive--mainTitle {
         font-size: 3.125vw;
+        @include media(iPad){
+            font-size: 7.2vw;
+        }
+        @include media(iPhone){
+            font-size: 9.6vw;
+        }
     }
     &__MainArchive--text {
         font-size: clamp(16px, 0.83vw, 0.83vw);
+        @include media(iPad){
+            font-size: clamp(16px, 1.92vw, 1.92vw);
+        }
     }
     &__ArchiveText {
         &--title {
             font-size: 1.875vw;
+            @include media(iPad){
+                font-size: 4.32vw;
+            }
         }
         &--text {
             font-size: clamp(16px, 0.83vw, 0.83vw);
+            @include media(iPad){
+                font-size: clamp(16px, 1.92vw, 1.92vw);
+            }
         }
     }
     &__Pagination {
@@ -194,6 +209,9 @@
         }
         &--prev, &--next {
             color: transparent;
+            @include media(iPhone){
+                color: $textColor_Gray
+            }
         }
 
     }
@@ -264,6 +282,9 @@
     &__MainArchive--mainTitle--text {
         line-height: normal;
         vertical-align: middle;
+        @include media(iPhone){
+            line-height: clamp(16px, 4.3vw, 4.3vw);
+        }
     }
 }
 .c-text-indent {
@@ -273,6 +294,9 @@
     &__MainArchive--mainTitle--text {
         text-indent: 1.04vw;
         display: inline-block;
+        @include media(iPhone){
+            text-indent: 0;
+        }
     }
 }
 .c-text-separate {

@@ -1,67 +1,99 @@
 @use "../../foundation/" as *;
 
-@include media (iPad) {
-    .c-mainlist {
+.c-mainlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row;
+    margin: 0 auto 1.5625vw auto;
+    &__Image {
+        min-width: 35.26vw;
+        overflow: hidden;
+        height: auto;
+        &--wrap {
+            height: 100%;
+            width: auto;
+            aspect-ratio: 677 / 471;
+        }
+        &--image {
+            height: 100%;
+            width: auto;
+            aspect-ratio: 677 / 471;
+        }
+    }
+    &__Text {
+        width: 35.3vw;
+        min-height: 100%;
+        background: $bgColor_Archive;
+        padding: 2.8vw 5.4vw 0 3.3vw;
+        &--title {
+            display: block;
+            font-size: 1.875vw;
+            color: $textColor_White;
+            padding: 0 0 2.4vw 0;
+        }
+        &--subTitle {
+            display: block;
+            font-size: 1.25vw;
+            color: $textColor_White;
+            padding: 0 0 0.89vw 0;
+        }
+        &--text {
+            display: inline-block;
+            font-size: clamp(16px, 0.83vw, 0.83vw);
+            color: $textColor_White;
+            width: 26.5vw;
+            min-height: 2.9vw;
+        }
+        &--button {
+            display: block;
+            width: 15.2vw;
+            height: 3.96vw;
+            margin: 3.125vw 3.91vw 3.125vw 7.4vw;
+            background: $textColor_White;
+            font-size: clamp(16px, 0.83vw, 0.83vw);
+            border: none;
+            border-radius: 3.96vw;
+            color: $textColor_Gray;
+        }
     }
 }
-@include media (PC) {
+
+@include media (iPhone) {
     .c-mainlist {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        flex-flow: row;
+        flex-flow: column;
         margin: 0 auto 1.5625vw auto;
-        &__Image {
-            min-width: 35.26vw;
-            overflow: hidden;
-            height: auto;
-            &--wrap {
-                height: 100%;
-                width: auto;
-                aspect-ratio: 677 / 471;
-            }
-            &--image {
-                height: 100%;
-                width: auto;
-                aspect-ratio: 677 / 471;
-            }
-        }
         &__Text {
-            width: 35.3vw;
+            width: 100%;
             min-height: 100%;
-            background: $bgColor_Archive;
+            background: #3C2B1C;
             padding: 2.8vw 5.4vw 0 3.3vw;
             &--title {
-                display: block;
-                font-size: 1.875vw;
-                color: $textColor_White;
-                padding: 0 0 2.4vw 0;
+                font-size: clamp(20px, 5.3vw, 5.3vw);
             }
             &--subTitle {
-                display: block;
-                font-size: 1.25vw;
-                color: $textColor_White;
-                padding: 0 0 0.89vw 0;
+                font-size: clamp(16px, 4.3vw, 4.3vw);
+                font-weight: 600;
             }
             &--text {
-                display: inline-block;
-                font-size: clamp(16px, 0.83vw, 0.83vw);
-                color: $textColor_White;
-                width: 26.5vw;
-                min-height: 2.9vw;
+                width: 100%;
             }
             &--button {
-                display: block;
-                width: 15.2vw;
-                height: 3.96vw;
-                margin: 3.125vw 3.91vw 3.125vw 7.4vw;
-                background: $textColor_White;
-                font-size: clamp(16px, 0.83vw, 0.83vw);
-                border: none;
-                border-radius: 3.96vw;
-                color: $textColor_Gray;
+                width: 43.5vw;
+                height: 12vw;
+                border-radius: 6vw;
+                margin: 3.125vw auto;
+            }
+        }
+        &__Pagination {
+            &--fraction, &--number {
+                display: none;
             }
         }
     }
 }
+
 

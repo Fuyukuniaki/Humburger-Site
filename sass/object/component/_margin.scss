@@ -58,7 +58,13 @@
     &__MainArchive {
         margin: 0 auto 3.65vw auto;
         &--mainTitle {
-            margin: auto auto auto 4.48vw;
+            margin: auto 1.04vw auto 4.48vw;
+            @include media(iPad){
+                margin: 12.47vw 1.04vw 12.23vw 10.31vw;
+            }
+            @include media(iPhone){
+                margin: 0;
+            }
         }
     }
     &__ArchiveText {
