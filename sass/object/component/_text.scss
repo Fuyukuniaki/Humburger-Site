@@ -40,6 +40,15 @@
             }
         }
     }
+    &__MainSingle--mainTitle {
+        font-size: 3.125vw;
+        @include media(iPad){
+            font-size: 4.3vw;
+        }
+        @include media(iPhone){
+            font-size: 9.6vw;
+        }
+    }
     &__MainCard--title {
         font-size: 4.17vw;
         @include media(iPad){

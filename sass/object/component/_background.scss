@@ -29,7 +29,12 @@
         background-color: #000;
         // background-blend-mode: darken;
     }
-    
+    &__MainSingle--title {
+        background-image: url(/images/page-title_burger.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
     &__MainCard {
         &--takeout {
             background: url(/images/bg_takeout.png);

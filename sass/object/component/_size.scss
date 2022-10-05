@@ -2,6 +2,12 @@
 @use "../../foundation/" as *;
 
 .c-size {
+    &__Single--image {
+        &--wide {
+            width: 100%;
+            height: auto;
+        }
+    }
     @include media(iPad){
         &__FrontPage {
             width:100vw;

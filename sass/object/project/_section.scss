@@ -74,6 +74,14 @@
             }
         }
     }
+    &__MainSingle--title {
+        width: $headerWidth_PC;
+        height: 26vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row;
+    }
     &__ArchiveText {
         width: $headerWidth_PC;
         display: flex;
@@ -83,6 +91,9 @@
         @include media(iPad){
             width: $mainArchiveW_iPad;
         }
+    }
+    &__SingleText {
+        margin: 3.125vw 5.2vw auto 5.2vw;
     }
     &__Archive-list {
         &--list {

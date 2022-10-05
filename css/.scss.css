@@ -1,0 +1,115 @@
+ul, ol, dl, li, dt, dd, figure {
+  list-style: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  text-align: left;
+  line-height: inherit;
+}
+
+a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :target {
+  color: inherit;
+  text-decoration: none;
+}
+
+.c-mainlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: row;
+  margin: 0 auto 1.5625vw auto;
+}
+.c-mainlist__Image {
+  min-width: 35.26vw;
+  overflow: hidden;
+  height: auto;
+}
+.c-mainlist__Image--wrap {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 677/471;
+}
+.c-mainlist__Image--image {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 677/471;
+}
+.c-mainlist__Text {
+  width: 35.3vw;
+  min-height: 100%;
+  background: #3C2B1C;
+  padding: 2.8vw 5.4vw 0 3.3vw;
+}
+.c-mainlist__Text--title {
+  display: block;
+  font-size: 1.875vw;
+  color: #FFFFFF;
+  padding: 0 0 2.4vw 0;
+}
+.c-mainlist__Text--subTitle {
+  display: block;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  padding: 0 0 0.89vw 0;
+}
+.c-mainlist__Text--text {
+  display: inline-block;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
+  color: #FFFFFF;
+  width: 26.5vw;
+  min-height: 2.9vw;
+}
+.c-mainlist__Text--button {
+  display: block;
+  width: 15.2vw;
+  height: 3.96vw;
+  margin: 3.125vw 3.91vw 3.125vw 7.4vw;
+  background: #FFFFFF;
+  font-size: clamp(16px, 0.83vw, 0.83vw);
+  border: none;
+  border-radius: 3.96vw;
+  color: #707070;
+}
+
+@media only screen and (max-width:599px) {
+  .c-mainlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: column;
+    margin: 0 auto 1.5625vw auto;
+  }
+  .c-mainlist__Text {
+    width: 100%;
+    min-height: 100%;
+    background: #3C2B1C;
+    padding: 2.8vw 5.4vw 0 3.3vw;
+  }
+  .c-mainlist__Text--title {
+    font-size: clamp(20px, 5.3vw, 5.3vw);
+  }
+  .c-mainlist__Text--subTitle {
+    font-size: clamp(16px, 4.3vw, 4.3vw);
+    font-weight: 600;
+  }
+  .c-mainlist__Text--text {
+    width: 100%;
+  }
+  .c-mainlist__Text--button {
+    width: 43.5vw;
+    height: 12vw;
+    border-radius: 6vw;
+    margin: 3.125vw auto;
+  }
+  .c-mainlist__Pagination--fraction, .c-mainlist__Pagination--number {
+    display: none;
+  }
+}
+/*# sourceMappingURL=.scss.css.map */

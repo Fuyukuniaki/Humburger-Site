@@ -196,6 +196,10 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     right: 0;
   }
 }
+.c-size__Single--image--wide {
+  width: 100%;
+  height: auto;
+}
 @media only screen and (max-width:834px) {
   .c-size__FrontPage {
     width: 100vw;
@@ -301,6 +305,12 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000;
+}
+.c-background__MainSingle--title {
+  background-image: url(/images/page-title_burger.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .c-background__MainCard--takeout {
   background: url(/images/bg_takeout.png);
@@ -440,6 +450,53 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     display: none;
   }
 }
+*[class^=c-single] {
+  margin: 0 0 3.125vw 0;
+  color: #3C2A10;
+}
+
+.c-single__Text--h2 {
+  font-size: 1.875vw;
+}
+.c-single__Text--h3 {
+  font-size: 1.458vw;
+}
+.c-single__Text--h4 {
+  font-size: 1.042vw;
+}
+.c-single__Text--h4 {
+  font-size: 1.042vw;
+}
+.c-single__Text--h5 {
+  font-size: 1.042vw;
+}
+.c-single__Text--h6 {
+  font-size: 1.042vw;
+}
+.c-single__Text--p {
+  font-size: 0.833vw;
+}
+.c-single__Blockquote {
+  padding: 3.125vw;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  font-size: 0.833vw;
+}
+.c-single__Blockquote--p {
+  margin: 2.604vw 0 0 0;
+  font-size: 0.833vw;
+}
+.c-single__Blockquote--a {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+.c-single__Image--wide {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1353/500;
+  overflow: hidden;
+}
+
 .c-color {
   color: #707070;
 }
@@ -481,6 +538,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .c-margin__MainTitle {
     margin: auto auto auto 10vw;
   }
+}
+.c-margin__MainSingle--mainTitle {
+  margin: auto auto auto 4.48vw;
 }
 .c-margin__MainCard {
   margin: 6.1vw auto 7vw auto;
@@ -680,6 +740,19 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 .c-text-size__MainArchive--mainTitle--text {
   font-size: clamp(16px, 0.83vw, 0.83vw);
+}
+.c-text-size__MainSingle--mainTitle {
+  font-size: 3.125vw;
+}
+@media only screen and (max-width:834px) {
+  .c-text-size__MainSingle--mainTitle {
+    font-size: 4.3vw;
+  }
+}
+@media only screen and (max-width:599px) {
+  .c-text-size__MainSingle--mainTitle {
+    font-size: 9.6vw;
+  }
 }
 .c-text-size__MainCard--title {
   font-size: 4.17vw;
@@ -1384,6 +1457,14 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
     padding: 12.47vw 0 12.23vw 10.31vw;
   }
 }
+.p-section__MainSingle--title {
+  width: 81vw;
+  height: 26vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+}
 .p-section__ArchiveText {
   width: 81vw;
   display: flex;
@@ -1395,6 +1476,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   .p-section__ArchiveText {
     width: 91vw;
   }
+}
+.p-section__SingleText {
+  margin: 3.125vw 5.2vw auto 5.2vw;
 }
 .p-section__Archive-list--list {
   width: 70.5vw;
