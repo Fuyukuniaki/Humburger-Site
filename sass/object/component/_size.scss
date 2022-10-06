@@ -3,6 +3,8 @@
 
 .c-size {
     &__Single--image {
+        width: 100%;
+        height: auto;
         &--wide {
             width: 100%;
             height: auto;

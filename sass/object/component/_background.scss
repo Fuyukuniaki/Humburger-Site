@@ -29,6 +29,9 @@
         background-color: #000;
         // background-blend-mode: darken;
     }
+    &__Single--main {
+        background: $bgColor_CardBase;
+    }
     &__MainSingle--title {
         background-image: url(/images/page-title_burger.jpg);
         background-size: cover;

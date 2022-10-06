@@ -1,0 +1,157 @@
+@use "../../foundation/" as *;
+
+*[class^="c-customize"]{
+    margin: 0 0 3.125vw 0;
+    color: $textColor_Brown;
+}
+
+.c-customize {
+    &__Text--h2 {
+        font-size: 1.875vw;
+    }
+    &__Text--h3 {
+        font-size: 1.458vw;
+    }
+    &__Text--h4 {
+        font-size: 1.042vw;
+    }
+    &__Text--h4 {
+        font-size: 1.042vw;
+    }
+    &__Text--h5 {
+        font-size: 1.042vw;
+    }
+    &__Text--h6 {
+        font-size: 1.042vw;
+    }
+    &__Text--p {
+        font-size: 0.833vw;
+    }
+    &__Text--bold {
+        font-weight: $textFont_WeightBold;
+        font-size: 0.833vw;
+    }
+    &__Blockquote {
+        padding: 3.125vw;
+        box-sizing: border-box;
+        background-color: $bgColor_Quote;
+        font-size: 0.833vw;
+        &--p {
+            margin: 2.604vw 0 0 0;
+            font-size: 0.833vw;
+        }
+        &--a {
+            color: $textColor_Blue;
+            text-decoration: underline;
+        }
+    }
+    &__Image--wide {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1353 / 500;
+        overflow: hidden;
+    }
+    &__MediaBlock {
+        &--mediaLeft {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        &--mediaRight {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        &--media {
+            width: 30.2vw;
+            height: auto;
+        }
+        &--text {
+            width: 38.17vw;
+            height: auto;
+        }
+    }
+    &__Image--center {
+        display: flex;
+        margin: 0 auto 3.125vw auto;
+        width: 30.2vw;
+        height: auto;
+    }
+    &__Image--gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &--image {
+            width: 22.8125vw;
+            height: auto;
+            margin: 0 0 1.04vw 0;
+        }
+    }
+    &__List {
+        margin: 0;
+        &--order {
+            list-style: decimal;
+            margin: 0 0 1.04vw 0;
+            font-size: 0.833vw;
+            &--sub {
+                margin: 1.04vw 0 0 0;
+                text-indent: 1.66vw;
+            }
+            &:last-of-type {
+                margin: 0 0 3.125vw 0;
+            }
+        }
+        &--regular {
+            margin: 0 0 1.04vw 0;
+            font-size: 0.833vw;
+            &--sub {
+                margin: 1.04vw 0 0 0;
+                text-indent: 1.66vw;
+            }
+            &:last-of-type {
+                margin: 0 0 3.125vw 0;
+            }
+        }
+    }
+    &__Code {
+        font-size: 0.833vw;
+        margin: 0;
+        &--pre {
+            display: flex;
+            padding: 0 2.6vw;
+            background-color: $bgColor_Quote;
+        }
+    }
+    &__Table {
+        background-color: $textColor_White;
+        border-collapse: collapse;
+        border: 1px solid $textColor_Gray;
+        width: 100%;
+        font-size: 0.833vw;
+        &--tr {
+            border: 1px solid $textColor_Gray;
+            height: 4.01vw;
+            line-height: 4.01vw;
+        }
+        &--th {
+            border: 1px solid $textColor_Gray;
+        }
+        &--td {
+            border: 1px solid $textColor_Gray;
+            padding: 0 0 0 1.5625vw;
+            &:first-of-type {
+                width: 22.3vw;
+            }
+        }
+    }
+    &__Button {
+        background: linear-gradient($linearGradientS, $linearGradientE);
+        border: 1px solid $textColor_Gray;
+        border-radius: 0.833vw;
+        font-size: 0.833vw;
+        height: 5.46875vw;
+        width: 22.4vw;
+    }
+}
