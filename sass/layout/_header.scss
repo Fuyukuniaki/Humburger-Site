@@ -14,7 +14,7 @@
         height: $headerHeight_iPad;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        width: $headerWidth_iPad;
     }
     @include media(iPhone){
         display: flex;
@@ -22,6 +22,6 @@
         height: $headerH_iPhone;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        width: $headerWidth_iPad;
     }
 }

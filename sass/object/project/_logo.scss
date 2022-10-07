@@ -3,7 +3,7 @@
     display: block;
     @include media(iPad){
         display: block;
-        width: 100vw;
+        width: $headerWidth_iPad;
         text-align: center;
     }
 }

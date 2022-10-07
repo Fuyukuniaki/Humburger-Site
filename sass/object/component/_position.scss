@@ -16,7 +16,7 @@
             transition: 1000ms;
             &.active {
                 overscroll-behavior: contain;
-                left: 100vw - $navMenuWidth_iPad;
+                left: $headerWidth_iPad - $navMenuWidth_iPad;
                 right: 0;
             }
         }
@@ -38,7 +38,7 @@
             transition: 1000ms;
             &.active {
                 overscroll-behavior: contain;
-                left: 100vw - $navMenuW_iPhone;
+                left: $headerWidth_iPad - $navMenuW_iPhone;
                 right: 0;
             }
         }

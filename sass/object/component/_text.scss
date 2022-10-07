@@ -43,7 +43,16 @@
     &__MainSingle--mainTitle {
         font-size: 3.125vw;
         @include media(iPad){
-            font-size: 4.3vw;
+            font-size: 7.1942vw;
+        }
+        @include media(iPhone){
+            font-size: 9.6vw;
+        }
+    }
+    &__MainPage--mainTitle {
+        font-size: 3.125vw;
+        @include media(iPad){
+            font-size: 7.1942vw;
         }
         @include media(iPhone){
             font-size: 9.6vw;

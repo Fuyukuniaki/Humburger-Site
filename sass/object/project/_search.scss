@@ -6,7 +6,7 @@
     justify-content: flex-end;
     align-items: center;
     @include media(iPad){
-        width: 100vw;
+        width: $headerWidth_iPad;
         display: flex;
         position: relative;
         flex-flow: row nowrap;

@@ -7,7 +7,7 @@
     align-items: flex-start;
     flex-flow: column wrap;
     @include media(iPad){
-        width: 100vw;
+        width: $headerWidth_iPad;
     }
     &__archive {
         justify-content: center;

@@ -37,7 +37,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        }
+    }
+    &__MainPage--title {
+        background-image: url(/images/page-title_shop@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     &__MainCard {
         &--takeout {
             background: url(/images/bg_takeout.png);

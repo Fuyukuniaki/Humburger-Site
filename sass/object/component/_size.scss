@@ -12,7 +12,7 @@
     }
     @include media(iPad){
         &__FrontPage {
-            width:100vw;
+            width:$headerWidth_iPad;
         }
     }
     @include media(iPhone){
@@ -37,14 +37,14 @@
             }     
         }
         @include media(iPad){
-            width: 100vw;
+            width: $headerWidth_iPad;
             height: 100%;
         }
         @include media(iPhone){
-            width: 100vw;
+            width: $headerWidth_iPad;
             height: 184vw;
             &--text {
-                width: 100vw;
+                width: $headerWidth_iPad;
                 height: 110vw;
             }
         }
@@ -75,7 +75,7 @@
     }
     @include media(iPhone){
         &__Footer{
-            width: 100vw;
+            width: $headerWidth_iPad;
             height: 40vw;    
         }
     }

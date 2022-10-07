@@ -3,42 +3,110 @@
 *[class^="c-customize"]{
     margin: 0 0 3.125vw 0;
     color: $textColor_Brown;
+    @include media(iPad){
+        margin: 0 0 7.194vw 0;
+    }
+    @include media(iPhone){
+        margin: 0 0 8vw 0;
+    }
 }
 
 .c-customize {
+    &__Text--h1 {
+        font-size: 3.125vw;
+        @include media(iPad){
+            font-size: 7.1942vw;
+        }
+        @include media(iPhone){
+            font-size: 9.6vw;
+        }
+    }
     &__Text--h2 {
         font-size: 1.875vw;
+        @include media(iPad){
+            font-size: 4.32vw;
+        }
+        @include media(iPhone){
+            font-size: 7.5vw;
+        }
     }
     &__Text--h3 {
         font-size: 1.458vw;
+        @include media(iPad){
+            font-size: 3.36vw;
+        }
+        @include media(iPhone){
+            font-size: 6.4vw;
+        }
     }
     &__Text--h4 {
         font-size: 1.042vw;
-    }
-    &__Text--h4 {
-        font-size: 1.042vw;
+        @include media(iPad){
+            font-size: 2.4vw;
+        }
+        @include media(iPhone){
+            font-size: 5.333vw;
+        }
     }
     &__Text--h5 {
         font-size: 1.042vw;
+        @include media(iPad){
+            font-size: 2.4vw;
+        }
+        @include media(iPhone){
+            font-size: 5.333vw;
+        }
     }
     &__Text--h6 {
         font-size: 1.042vw;
+        @include media(iPad){
+            font-size: 2.4vw;
+        }
+        @include media(iPhone){
+            font-size: 5.333vw;
+        }
     }
     &__Text--p {
         font-size: clamp(0.833vw, 0.833vw, 14px);
+        @include media(iPad){
+            font-size:  clamp(1.92vw, 1.92vw, 16px);
+        }
+        @include media(iPhone){
+            font-size: clamp(4.26vw, 4.26vw, 16px);
+        }
     }
     &__Text--bold {
         font-weight: $textFont_WeightBold;
         font-size: clamp(0.833vw, 0.833vw, 14px);
+        @include media(iPad){
+            font-size:  clamp(1.92vw, 1.92vw, 16px);
+        }
+        @include media(iPhone){
+            font-size: clamp(4.26vw, 4.26vw, 16px);
+        }
     }
     &__Blockquote {
         padding: 3.125vw;
         box-sizing: border-box;
         background-color: $bgColor_Quote;
         font-size: clamp(0.833vw, 0.833vw, 14px);
+        @include media(iPad){
+            padding: 7.194vw;
+            font-size:  clamp(1.92vw, 1.92vw, 16px);
+        }
+        @include media(iPhone){
+            font-size: clamp(4.26vw, 4.26vw, 16px);
+        }
         &--p {
             margin: 2.604vw 0 0 0;
             font-size: clamp(0.833vw, 0.833vw, 14px);
+            @include media(iPad){
+                margin: 6vw 0 0 0;
+                font-size:  clamp(1.92vw, 1.92vw, 16px);
+            }
+            @include media(iPhone){
+                font-size: clamp(4.26vw, 4.26vw, 16px);
+            }
         }
         &--a {
             color: $textColor_Blue;
@@ -67,10 +135,22 @@
         &--media {
             width: 30.2vw;
             height: auto;
+            @include media(iPad){
+                width: 36.7vw;
+            }
+            @include media(iPhone){
+                width: 38.4vw;
+            }
         }
         &--text {
             width: 38.17vw;
             height: auto;
+            @include media(iPad){
+                width: 46.4vw;
+            }
+            @include media(iPhone){
+                width: 48.8vw;
+            }
         }
     }
     &__Image--center {
@@ -78,6 +158,12 @@
         margin: 0 auto 3.125vw auto;
         width: 30.2vw;
         height: auto;
+        @include media(iPad){
+            width: 69.66vw;
+        }
+        @include media(iPhone){
+            width: 71.2vw;
+        }
     }
     &__Image--gallery {
         display: flex;
@@ -87,41 +173,103 @@
             width: 22.8125vw;
             height: auto;
             margin: 0 0 1.04vw 0;
+            @include media(iPad){
+                width: 41.84vw;
+                margin: 0 0 2.398vw 0;
+            }
+            @include media(iPhone){
+                width: 89.33vw;
+                margin: 0 0 5.33vw 0;
+            }
         }
     }
     &__List {
         margin: 0;
         &--order {
-            list-style: decimal;
             margin: 0 0 1.04vw 0;
             font-size: clamp(0.833vw, 0.833vw, 14px);
+            & > .c-customize__List {
+                display: list-item;
+                list-style: decimal;
+                text-indent: 0.8vw;
+                margin: 0 0 0 4.8vw;
+            }
+            @include media(iPad){
+                font-size:  clamp(1.92vw, 1.92vw, 16px);
+            }
+            @include media(iPhone){
+                margin: 0 0 5.33vw 0;
+                font-size: clamp(4.26vw, 4.26vw, 16px);
+            }
             &--sub {
                 margin: 1.04vw 0 0 0;
                 text-indent: 1.66vw;
+                & > .c-customize__List {
+                    display: list-item;
+                    list-style: decimal;
+                    margin: 0 0 0 4.8vw;
+                    text-indent: -0.8vw;
+                }    
+                @include media(iPhone){
+                    margin: 5.33vw 0 0 0;
+                    text-indent: 4.8vw;
+                }
             }
             &:last-of-type {
                 margin: 0 0 3.125vw 0;
+                @include media(iPad){
+                    margin: 0 0 7.194vw 0;
+                }
+                @include media(iPhone){
+                    margin: 0 0 8vw 0;
+                }
             }
         }
         &--regular {
             margin: 0 0 1.04vw 0;
             font-size: clamp(0.833vw, 0.833vw, 14px);
+            @include media(iPad){
+                font-size:  clamp(1.92vw, 1.92vw, 16px);
+            }
+            @include media(iPhone){
+                margin: 0 0 5.33vw 0;
+                font-size: clamp(4.26vw, 4.26vw, 16px);
+            }
             &--sub {
                 margin: 1.04vw 0 0 0;
                 text-indent: 1.66vw;
+                @include media(iPhone){
+                    margin: 5.33vw 0 0 0;
+                    text-indent: 4.8vw;
+                }
             }
             &:last-of-type {
                 margin: 0 0 3.125vw 0;
+                @include media(iPad){
+                    margin: 0 0 7.194vw 0;
+                }
+                @include media(iPhone){
+                    margin: 0 0 8vw 0;
+                }
             }
         }
     }
     &__Code {
         font-size: clamp(0.833vw, 0.833vw, 14px);
+        @include media(iPad){
+            font-size:  clamp(1.92vw, 1.92vw, 16px);
+        }
+        @include media(iPhone){
+            font-size: clamp(4.26vw, 4.26vw, 16px);
+        }
         margin: 0;
         &--pre {
             display: flex;
             padding: 0 2.6vw;
             background-color: $bgColor_Quote;
+            @include media(iPhone){
+                padding: calc(13.33vw - 1em) 13.33vw;
+            }
         }
     }
     &__Table {
@@ -130,10 +278,22 @@
         border: 1px solid $textColor_Gray;
         width: 100%;
         font-size: clamp(0.833vw, 0.833vw, 14px);
+        @include media(iPad){
+            font-size:  clamp(1.92vw, 1.92vw, 16px);
+        }
+        @include media(iPhone){
+            font-size: clamp(4.26vw, 4.26vw, 16px);
+        }
         &--tr {
             border: 1px solid $textColor_Gray;
             height: 4.01vw;
             line-height: 4.01vw;
+            @include media(iPad){
+                height: 9.233vw;
+            }
+            @include media(iPhone){
+                height: 20.53vw;
+            }
         }
         &--th {
             border: 1px solid $textColor_Gray;
@@ -141,8 +301,17 @@
         &--td {
             border: 1px solid $textColor_Gray;
             padding: 0 0 0 1.5625vw;
+            @include media(iPad){
+                padding: 0 0 0 3.597vw;
+            }
             &:first-of-type {
                 width: 22.3vw;
+                @include media(iPad){
+                    width: 25.78vw;
+                }
+                @include media(iPhone){
+                    width: 36vw;
+                }
             }
         }
     }
@@ -151,7 +320,19 @@
         border: 1px solid $textColor_Gray;
         border-radius: 0.833vw;
         font-size: clamp(0.833vw, 0.833vw, 14px);
-        height: 5.46875vw;
         width: 22.4vw;
+        height: 5.46875vw;
+        @include media(iPad){
+            border-radius: 2.4vw;
+            font-size:  clamp(1.92vw, 1.92vw, 16px);
+            width: 51.44vw;
+            height: 12.47vw;
+        }
+        @include media(iPhone){
+            border-radius: 4.27vw;
+            font-size: clamp(4.26vw, 4.26vw, 16px);
+            width: 100%;
+            height: 21.6vw;
+        }
     }
 }

@@ -12,14 +12,14 @@
             justify-content: flex-start;
             align-items: center;
             height: 34vw;
-            width: 100vw;
+            width: $headerWidth_iPad;
         }
         @include media(iPhone){
             display: flex;
             justify-content: flex-start;
             align-items: center;
             height:74.7vw;
-            width: 100vw;
+            width: $headerWidth_iPad;
         }
     }
     &__MainCard {
@@ -81,6 +81,22 @@
         justify-content: flex-start;
         align-items: center;
         flex-flow: row;
+        @include media(iPad){
+            width: $headerWidth_iPad;
+            height: 59.95vw;
+        }
+    }
+    &__MainPage--title {
+        width: $headerWidth_PC;
+        height: 26vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row;
+        @include media(iPad){
+            width: $headerWidth_iPad;
+            height: 59.95vw;
+        }
     }
     &__ArchiveText {
         width: $headerWidth_PC;
@@ -94,6 +110,12 @@
     }
     &__SingleText {
         margin: 3.125vw 5.2vw auto 5.2vw;
+        @include media(iPad){
+            margin: 7.194vw 7.194vw auto 7.194vw;
+        }
+        @include media(iPhone){
+            margin: 8vw 5.333vw 49.07vw 5.333vw;
+        }
     }
     &__Archive-list {
         &--list {
