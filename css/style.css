@@ -481,21 +481,21 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   font-size: 1.042vw;
 }
 .c-customize__Text--p {
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__Text--bold {
   font-weight: 700;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__Blockquote {
   padding: 3.125vw;
   box-sizing: border-box;
   background-color: #F5F5F5;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__Blockquote--p {
   margin: 2.604vw 0 0 0;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__Blockquote--a {
   color: #4A6C9B;
@@ -549,7 +549,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-customize__List--order {
   list-style: decimal;
   margin: 0 0 1.04vw 0;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__List--order--sub {
   margin: 1.04vw 0 0 0;
@@ -560,7 +560,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 }
 .c-customize__List--regular {
   margin: 0 0 1.04vw 0;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__List--regular--sub {
   margin: 1.04vw 0 0 0;
@@ -570,7 +570,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   margin: 0 0 3.125vw 0;
 }
 .c-customize__Code {
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
   margin: 0;
 }
 .c-customize__Code--pre {
@@ -583,7 +583,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   border-collapse: collapse;
   border: 1px solid #707070;
   width: 100%;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
 }
 .c-customize__Table--tr {
   border: 1px solid #707070;
@@ -604,7 +604,7 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
   background: linear-gradient(#F2EDE9, #DED8D3);
   border: 1px solid #707070;
   border-radius: 0.833vw;
-  font-size: 0.833vw;
+  font-size: clamp(0.833vw, 0.833vw, 14px);
   height: 5.46875vw;
   width: 22.4vw;
 }

@@ -25,20 +25,20 @@
         font-size: 1.042vw;
     }
     &__Text--p {
-        font-size: 0.833vw;
+        font-size: clamp(0.833vw, 0.833vw, 14px);
     }
     &__Text--bold {
         font-weight: $textFont_WeightBold;
-        font-size: 0.833vw;
+        font-size: clamp(0.833vw, 0.833vw, 14px);
     }
     &__Blockquote {
         padding: 3.125vw;
         box-sizing: border-box;
         background-color: $bgColor_Quote;
-        font-size: 0.833vw;
+        font-size: clamp(0.833vw, 0.833vw, 14px);
         &--p {
             margin: 2.604vw 0 0 0;
-            font-size: 0.833vw;
+            font-size: clamp(0.833vw, 0.833vw, 14px);
         }
         &--a {
             color: $textColor_Blue;
@@ -94,7 +94,7 @@
         &--order {
             list-style: decimal;
             margin: 0 0 1.04vw 0;
-            font-size: 0.833vw;
+            font-size: clamp(0.833vw, 0.833vw, 14px);
             &--sub {
                 margin: 1.04vw 0 0 0;
                 text-indent: 1.66vw;
@@ -105,7 +105,7 @@
         }
         &--regular {
             margin: 0 0 1.04vw 0;
-            font-size: 0.833vw;
+            font-size: clamp(0.833vw, 0.833vw, 14px);
             &--sub {
                 margin: 1.04vw 0 0 0;
                 text-indent: 1.66vw;
@@ -116,7 +116,7 @@
         }
     }
     &__Code {
-        font-size: 0.833vw;
+        font-size: clamp(0.833vw, 0.833vw, 14px);
         margin: 0;
         &--pre {
             display: flex;
@@ -129,7 +129,7 @@
         border-collapse: collapse;
         border: 1px solid $textColor_Gray;
         width: 100%;
-        font-size: 0.833vw;
+        font-size: clamp(0.833vw, 0.833vw, 14px);
         &--tr {
             border: 1px solid $textColor_Gray;
             height: 4.01vw;
@@ -150,7 +150,7 @@
         background: linear-gradient($linearGradientS, $linearGradientE);
         border: 1px solid $textColor_Gray;
         border-radius: 0.833vw;
-        font-size: 0.833vw;
+        font-size: clamp(0.833vw, 0.833vw, 14px);
         height: 5.46875vw;
         width: 22.4vw;
     }
