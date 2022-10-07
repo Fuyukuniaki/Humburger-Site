@@ -313,6 +313,9 @@ a, :link, :active, :hover, :focus, :visited, :focus-within, :focus-visible, :tar
 .c-background__Single--main {
   background: #FFFDFA;
 }
+.c-background__Page--main {
+  background: #FFFDFA;
+}
 .c-background__MainSingle--title {
   background-image: url(/images/page-title_burger.jpg);
   background-size: cover;
